@@ -123,10 +123,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-contrib-jasmine');
 
 	// A task for development
 	grunt.registerTask('dev', ['jshint', 'jasmine', 'sass:dev']);
@@ -136,8 +134,5 @@ module.exports = function (grunt) {
 
 	// Default task
 	grunt.registerTask('default', ['jshint', 'jasmine', 'sass:dev', 'requirejs', 'copy']);
-
-	// Travis CI task
-	grunt.registerTask('travis', ['jshint', 'jasmine']);
 
 };
