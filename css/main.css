@@ -5,7 +5,15 @@
  *	@version	v0.0.0
  *
  */
-/* normalize.css v1.1.0 | MIT License | git.io/normalize */
+/**
+ * @include x-multiple-backgrounds(
+ *	rgba(0, 0, 0, 0.3),
+ *	url('img/someImage-1.png'),
+ *	url('../img/someImage-2.png') no-repeat,
+ *	(linear-gradient, to bottom, #aaa, #ddd)
+ * );
+ */
+/* normalize.css v1.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -59,18 +67,26 @@ audio:not([controls]) {
    Base
    ========================================================================== */
 /**
- * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
  *    `em` units.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
 html {
-  font-size: 100%;
+  background: #fff;
   /* 1 */
-  -webkit-text-size-adjust: 100%;
+  color: #000;
   /* 2 */
+  font-size: 100%;
+  /* 3 */
   -ms-text-size-adjust: 100%;
-  /* 2 */
+  /* 4 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
 }
 
 /**
@@ -672,9 +688,6 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -682,84 +695,220 @@ textarea {
   padding: 0.2em 0;
 }
 
-@media print {
-  /* ==========================================================================
-     Print styles.
-     Inlined to avoid required HTTP connection: h5bp.com/r
-     ========================================================================== */
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
+h2 {
+  font-size: 32px;
+  font-size: 2rem;
+  margin: 48px 0 16px;
+  margin: 3rem 0 1rem;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: normal;
 }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+a {
+  color: #ffaa00;
+}
+a:visited {
+  color: #ffaa00;
+}
+a:hover {
+  text-decoration: none;
+}
 
-  h2,
-  h3 {
-    page-break-after: avoid;
+.site-content, .site-header .header-content {
+  padding: 32px 32px 16px;
+  padding: 2rem 2rem 1rem;
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.register {
+  text-align: center;
+}
+.register > a {
+  margin: 32px 0;
+  margin: 2rem 0;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
+  -webkit-box-shadow: 0 3px 0 #cc8800;
+  box-shadow: 0 3px 0 #cc8800;
+  position: relative;
+  display: inline-block;
+  background: #ffaa00;
+  color: #fff;
+  text-decoration: none;
+}
+.register > a:visited {
+  color: #fff;
+}
+.register > a:active {
+  -webkit-box-shadow: 0 1px 0 #cc8800;
+  box-shadow: 0 1px 0 #cc8800;
+  top: 2px;
+}
+
+.when {
+  margin-bottom: 416px;
+  margin-bottom: 26rem;
+}
+.when iframe {
+  height: 320px;
+  height: 20rem;
+  margin: 32px 0;
+  margin: 2rem 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.toc img {
+  margin: 0 0 16px 16px;
+  margin: 0 0 1rem 1rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  float: right;
+}
+
+.share {
+  margin: 48px 0;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.sponsors ul {
+  margin: 0 -16px;
+  margin: 0 -1rem;
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+}
+.sponsors li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 16px;
+  padding: 1rem;
+  display: inline;
+  float: left;
+  max-width: 50%;
+}
+.sponsors .logo {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  display: block;
+  height: 60px;
+  text-indent: -333px;
+  overflow: hidden;
+}
+.sponsors .gh .logo {
+  background: url(../img/gh.svg) no-repeat;
+  background-size: auto 100%;
+}
+
+/**
+ * The page's header
+ */
+.site-header {
+  background: #ffaa00;
+  text-align: center;
+  color: #fff;
+}
+.site-header h1 {
+  font-size: 48px;
+  font-size: 3rem;
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.1em;
+  text-shadow: 0 1px 1px rgba(13, 73, 99, 0.8);
+}
+.site-header > p {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-top: 0;
+}
+@media screen and (max-width: 30em) {
+  .site-header h1 {
+    margin-left: .2em;
+    margin-right: .2em;
+    font-size: 2em;
   }
 }
-@media screen only and (max-width: 480px) {
-  /* ==========================================================================
-     EXAMPLE Media Queries for Responsive Design.
-     Theses examples override the primary ('mobile first') styles.
-     Modify as content requires.
-     ========================================================================== */
+
+.coming-up {
+  background: #ffc34d;
 }
-@media screen only and (max-width: 480px) and (-o-min-device-pixel-ratio: 5 / 4), screen only and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 1.25), screen only and (max-width: 480px) and (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.coming-up p {
+  padding: 8px 0;
+  padding: 0.5rem 0;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/**
+ * The page's footer
+ */
+.site-footer {
+  margin-top: 48px;
+  margin-top: 3rem;
+  padding: 32px 0;
+  padding: 2rem 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+.site-footer a {
+  color: #ffcc66;
+}
+.site-footer a:visited {
+  color: #ffcc66;
+}
+
+.organizers a {
+  padding: 8px 0;
+  padding: 0.5rem 0;
+  line-height: 64px;
+  line-height: 4rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.organizers a:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+.organizers img {
+  width: 64px;
+  width: 4rem;
+  height: 64px;
+  height: 4rem;
+  margin: 0 8px;
+  margin: 0 0.5rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.organizers .amp {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin: 0 8px;
+  margin: 0 0.5rem;
+  font-family: serif;
+}
+
+.footer-links {
+  margin: 16px 32px 0;
+  margin: 1rem 2rem 0;
+  text-align: right;
+}
+.footer-links a {
+  padding: 0 8px;
+  padding: 0 0.5rem;
 }

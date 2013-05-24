@@ -1,0 +1,63 @@
+/**
+ * The page's footer
+ */
+
+.site-footer {
+	@include x-rem(margin-top, 3);
+	@include x-rem(padding, 2 0);
+	@include x-rem(font-size, 0.875);
+
+	text-align: center;
+
+	background: #222;
+	color: #fff;
+	text-align: center;
+
+	a {
+		color: lighten($highlight, 20);
+
+		&:visited {
+			color: lighten($highlight, 20);
+		}
+	}
+}
+
+.organizers {
+	a {
+		@include x-rem(padding, 0.5 0);
+		@include x-rem(line-height, 4);
+
+		display: inline-block;
+		text-decoration: none;
+
+		&:hover {
+			img {
+				@include x-transform(scale(1.05, 1.05));
+			}
+		}
+	}
+
+	img {
+		@include x-rem(width, 4);
+		@include x-rem(height, 4);
+		@include x-rem(margin, 0 0.5);
+		@include x-border-radius(50%);
+		@include x-transition(0.2s ease-out);
+	}
+
+	.amp {
+		@include x-rem(font-size, 1.2);
+		@include x-rem(margin, 0 0.5);
+
+		font-family: serif;
+	}
+}
+
+.footer-links {
+	@include x-rem(margin, 1 2 0);
+	text-align: right;
+
+	a {
+		@include x-rem(padding, 0 0.5);
+	}
+}

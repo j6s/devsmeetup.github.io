@@ -78,13 +78,135 @@ textarea {
 	resize: vertical;
 }
 
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-
+// Chrome Frame prompt
 .chromeframe {
 	margin: 0.2em 0;
 	background: #ccc;
 	color: #000;
 	padding: 0.2em 0;
+}
+
+
+// Headlines
+h2 {
+	@include x-rem(font-size, 2);
+	@include x-rem(margin, 3 0 1);
+
+	font-family: Helvetica Neue, sans-serif;
+	font-weight: normal;
+}
+
+
+// Links
+a {
+	color: $highlight;
+
+	&:visited {
+		color: $highlight;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+// Content
+%container {
+	@include x-rem(padding, 2 2 1);
+
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+.site-content {
+	@extend %container;
+}
+
+.register {
+	text-align: center;
+
+	> a {
+		@include x-rem(margin, 2 0);
+		@include x-rem(padding, 0.5 1);
+		@include x-box-shadow(0 3px 0 darken($highlight, 10));
+
+		position: relative;
+		display: inline-block;
+		background: $highlight;
+		color: #fff;
+		text-decoration: none;
+
+		&:visited {
+			color: #fff;
+		}
+
+		&:active {
+			@include x-box-shadow(0 1px 0 darken($highlight, 10));
+			top: 2px;
+		}
+	}
+}
+
+.when {
+	@include x-rem(margin-bottom, 26);
+
+	iframe {
+		@include x-rem(height, 20);
+		@include x-rem(margin, 2 0);
+
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+}
+
+.toc {
+	img {
+		@include x-rem(margin, 0 0 1 1);
+		@include x-border-radius(50%);
+
+		float: right;
+	}
+}
+
+.share {
+	@include x-rem(margin, 3 0);
+
+	text-align: center;
+}
+
+
+.sponsors {
+	ul {
+		@include x-rem(margin, 0 -1);
+
+		list-style: none;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	li {
+		@include x-box-sizing;
+		@include x-rem(padding, 1);
+
+		display: inline;
+		float: left;
+		max-width: 50%;
+	}
+
+	.logo {
+		@include x-rem(margin-bottom, 1);
+
+		display: block;
+		height: 60px;
+		text-indent: -333px;
+		overflow: hidden;
+	}
+
+	.gh .logo {
+		background: url(../img/gh.svg) no-repeat;
+		background-size: auto 100%;
+	}
 }

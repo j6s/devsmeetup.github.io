@@ -19,10 +19,14 @@
 		<![endif]-->
 
 		<header class="site-header">
-			<h1 role="banner">Developer MeetUp Freiburg</h1>
-			<p>Software Engineering und Developer MeetUp in Freiburg</p>
+			<div class="header-content">
+				<h1 role="banner">Developer MeetUp Freiburg</h1>
+				<p>Software Engineering und Developer MeetUp in Freiburg</p>
+			</div>
 
-			<p>12. Juni 2013 &mdash; 20 Uhr</p>
+			<div class="coming-up">
+				<p>12. Juni 2013 &mdash; 20 Uhr &mdash; Behavior Driven Development</p>
+			</div>
 		</header>
 
 		<section class="site-content" role="main">
@@ -41,44 +45,97 @@
 				Front-End als auch Back-End, Informatiker und technische
 				Projektmanager ansprechen.</p>
 
-			<h3>Wann geht's rund?</h3>
 
-			<p>Das erste Treffen ist für den Mittwoch, den 12. Juni 2013
-				geplant. Los geht es um 20 Uhr mit einem Vortrag zum Thema bla
-				bla bla.</p>
-			<p>Das Ganze findet im Co-Working Space
-				<a href="http://freiraumfreiburg.de/">Freiraum</a> in der Nähe
-				vom Bahnhof statt.</p>
+			<section class="toc">
+				<h2>Programm</h2>
 
-			<h3>Sponsoren</h3>
+				<a href="http://www.t3node.com/"><img src="img/steffen.jpg" alt="" class=""></a>
 
-			<p>Vielen Dank an alle die uns Unterstützen.</p>
+				<p><a href="http://www.t3node.com/">Steffen Müller</a> wird zum Thema <a href="http://en.wikipedia.org/wiki/Behavior-driven_development">Behavior Driven Development</a> einen Vortrag halten und seine Erfahrung auf diesem Gebiet erläutern.</p>
 
-			<p>Freiraum wird uns zur Verfügung gestellt von
-				<a href="http://gebruederheitz.de/">/gebrüderheitz</a></p>
+				<p>Im Anschluss ist Zeit für eine Diskussion zum Thema und zum generellen Netzwerken.</p>
+
+				<p>Wenn du mit dabei sein willst, komm einfach vorbei. Damit wir den Überblick behalten, wie viele Leute kommen, wäre es cool, wenn du dich über Lanyrd anmelden würdest.</p>
+
+				<p class="register"><a href="http://lanyrd.com/">Über Lanyrd anmelden</a></p>
+			</section>
 
 
+			<section class="when">
+				<h2>Wann geht's rund?</h2>
+
+				<p>Das erste Treffen ist für den Mittwoch, den 12. Juni 2013
+					geplant. Los geht es um 20 Uhr mit einem Vortrag zum Thema bla
+					bla bla.</p>
+				<p>Das Ganze findet im Co-Working Space
+					<a href="http://freiraumfreiburg.de/">Freiraum</a> in der Nähe
+					vom Bahnhof statt.</p>
+
+				<iframe frameborder="0" scrolling="no" src="https://www.google.com/maps?f=q&amp;q=freiraum,+freiburg&amp;sll=37.0625,-95.677068&amp;sspn=57.118084,113.818359&amp;t=m&amp;hnear=&amp;ie=UTF8&amp;hq=freiraum,&amp;hnear=Freiburg,+Baden-W%C3%BCrttemberg,+Germany&amp;ll=47.99716,7.84367&amp;spn=0.011946,0.027788&amp;z=15&amp;iwloc=A&amp;cid=11907079082932383774&amp;output=embed"></iframe>
+			</section>
+
+			<section class="share">
+				<h2>Sei dabei und sag’s weiter…</h2>
+
+				<p>
+					<a href="https://twitter.com/share"
+						class="twitter-share-button"
+						data-related="drublic,t3ndh" data-count="none"
+						data-size="large">Tweet</a>
+				</p>
+			</section>
+
+			<section class="sponsors">
+				<h2>Sponsoren</h2>
+
+				<p>Vielen Dank an alle, die uns unterstützen.</p>
+
+				<ul>
+					<li class="gh">
+						<a href="http://gebruederheitz.de/" class="logo">/gebrüderheitz</a>
+
+						Freiraum wird uns zur Verfügung gestellt von
+						<a href="http://gebruederheitz.de/">/gebrüderheitz</a>.
+					</li>
+					<li class="">
+						<a href="" class="logo"></a>
+
+						Getränke werden gesponsort von [?].
+					</li>
+				</ul>
+			</section>
 		</section>
 
 		<footer class="site-footer">
 			<p>Developer MeetUp Freiburg wird organisiert von</p>
 
-			<a href="http://www.ndh-websolutions.de/">
-				<img src="http://api.twitter.com/1/users/profile_image/t3ndh?size=bigger" title="">
-				Nico de Haen
-			</a>
+			<p class="organizers">
+				<a href="http://www.ndh-websolutions.de/">
+					Nico de Haen
+					<img src="http://api.twitter.com/1/users/profile_image/t3ndh?size=bigger" title="">
+				</a>
 
-			<a href="http://drublic.de/">
-				<img src="http://api.twitter.com/1/users/profile_image/drublic?size=bigger" alt="">
-				Hans Christian Reinl
-			</a>
+				<span class="amp">&amp;</span>
 
-			<p>
+				<a href="http://drublic.de/">
+					<img src="http://api.twitter.com/1/users/profile_image/drublic?size=bigger" alt="">
+					Hans Christian Reinl
+				</a>
+			</p>
+
+			<p class="footer-links">
 				<a href="mailto:info@drublic.de?subject=Devs%20Meetup">Kontakt</a>
 				<a href="http://drublic.de/#imprint">Impressum</a>
 			</p>
+		</footer>
 
+		<div id="fb-root"></div>
 		<script src="js/main.js"></script>
+
+		<script>
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		</script>
+
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>

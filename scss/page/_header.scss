@@ -1,0 +1,48 @@
+/**
+ * The page's header
+ */
+
+.site-header {
+	background: $highlight;
+	text-align: center;
+	color: #fff;
+
+	.header-content {
+		@extend %container;
+	}
+
+	h1 {
+		@include x-rem(font-size, 3);
+
+		display: block;
+		line-height: 1;
+		margin-bottom: 0.1em;
+		text-shadow: 0 1px 1px rgba(13, 73, 99, 0.8);
+	}
+
+	> p {
+		@include x-rem(font-size, 1);
+
+		margin-top: 0;
+	}
+
+	@media screen and (max-width: 30em) {
+		h1 {
+			margin-left: .2em;
+			margin-right: .2em;
+			font-size: 2em;
+		}
+	}
+}
+
+.coming-up {
+	background: lighten($highlight, 15);
+
+	p {
+		@include x-rem(padding, 0.5 0);
+		@include x-rem(font-size, 1.2);
+
+		margin: 0;
+	}
+}
+
