@@ -804,6 +804,10 @@ a:hover {
   background: url(../img/gh.svg) no-repeat;
   background-size: auto 100%;
 }
+.sponsors .ndh .logo {
+  background: url(../img/ndh.png) no-repeat;
+  background-size: auto 100%;
+}
 
 /**
  * The page's header
