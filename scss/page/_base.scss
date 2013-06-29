@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-	color: #222;
+	color: $mainTextColor;
 }
 
 body {
@@ -58,6 +58,9 @@ hr {
 
 img {
 	vertical-align: middle;
+	max-width: 100%;
+	width: auto;
+	height: auto;
 }
 
 /*
@@ -119,11 +122,37 @@ a {
 	margin: 0 auto;
 }
 
+.site-teaser {
+	background: transparent url('../img/slider.jpg') no-repeat top center;
+	color: $mainTextColor;
+	padding: 60px 0;
+
+	.teaser-content {
+		@extend %container;
+		background-size: 100% auto;
+
+		background: white;
+		padding-bottom: 0;
+		text-align: left;
+	}
+
+	img {
+		@include x-rem(margin, 0 1 0 0);
+		@include x-border-radius(50%);
+
+		float: left;
+	}
+
+	.btn {
+		text-align: right;
+	}
+}
+
 .site-content {
 	@extend %container;
 }
 
-.register {
+.btn {
 	text-align: center;
 
 	> a {

@@ -630,7 +630,7 @@ button,
 input,
 select,
 textarea {
-  color: #222;
+  color: #222222;
 }
 
 body {
@@ -670,6 +670,9 @@ hr {
  */
 img {
   vertical-align: middle;
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 
 /*
@@ -714,17 +717,39 @@ a:hover {
   text-decoration: none;
 }
 
-.site-content, .site-header .header-content {
+.site-teaser .teaser-content, .site-content, .site-header .header-content {
   padding: 32px 32px 16px;
   padding: 2rem 2rem 1rem;
   max-width: 40em;
   margin: 0 auto;
 }
 
-.register {
+.site-teaser {
+  background: transparent url("../img/slider.jpg") no-repeat top center;
+  color: #222222;
+  padding: 60px 0;
+}
+.site-teaser .teaser-content {
+  background-size: 100% auto;
+  background: white;
+  padding-bottom: 0;
+  text-align: left;
+}
+.site-teaser img {
+  margin: 0 16px 0 0;
+  margin: 0 1rem 0 0;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+}
+.site-teaser .btn {
+  text-align: right;
+}
+
+.btn {
   text-align: center;
 }
-.register > a {
+.btn > a {
   margin: 32px 0;
   margin: 2rem 0;
   padding: 8px 16px;
@@ -737,10 +762,10 @@ a:hover {
   color: #fff;
   text-decoration: none;
 }
-.register > a:visited {
+.btn > a:visited {
   color: #fff;
 }
-.register > a:active {
+.btn > a:active {
   -webkit-box-shadow: 0 1px 0 #cc8800;
   box-shadow: 0 1px 0 #cc8800;
   top: 2px;
@@ -807,6 +832,23 @@ a:hover {
 .sponsors .ndh .logo {
   background: url(../img/ndh.png) no-repeat;
   background-size: auto 100%;
+}
+
+/**
+ * The archive's footer
+ */
+.archive h2 {
+  margin-bottom: 0;
+}
+.archive img {
+  margin: 0 16px 0 0;
+  margin: 0 1rem 0 0;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  float: right;
+}
+.archive footer {
+  margin-top: 40px;
 }
 
 /**

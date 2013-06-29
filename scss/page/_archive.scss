@@ -1,0 +1,20 @@
+/**
+ * The archive's footer
+ */
+
+.archive {
+	h2 {
+		margin-bottom: 0;		
+	}
+
+	img {
+		@include x-rem(margin, 0 1 0 0);
+		@include x-border-radius(50%);
+
+		float: right;
+	}
+
+	footer {
+		margin-top: 40px;
+	}
+}
