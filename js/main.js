@@ -84,13 +84,30 @@
 		var _mainAction = 'index';
 		var _allowedActions = ['index', 'archive', 'teaser'];
 
+		// Inject script for twitter
+		var _injectTwitterButton = function () {
+			if (document.querySelector('.twitter-share-button')) {
+				(function (d,s,id) {
+					var js;
+					var fjs = d.getElementsByTagName(s)[0];
+
+					if (!d.getElementById(id)) {
+						js = d.createElement(s);
+						js.id = id;
+						js.src = "//platform.twitter.com/widgets.js";
+						fjs.parentNode.insertBefore(js, fjs);
+					}
+				}(document, 'script', 'twitter-wjs'));
+			}
+		};
+
 		var _mainHandler = function () {
 			var action = window.location.hash.replace('#/', '');
 
 			// Load index content
 			if (action === '' || action === '!') {
 
-				Loader.load(_mainAction, '.site-content');
+				Loader.load(_mainAction, '.site-content', _injectTwitterButton);
 
 				// And load teaser
 				Loader.load('teaser', '.site-teaser');
@@ -107,6 +124,7 @@
 				window.scrollTo(0);
 			}
 		};
+
 
 		return {
 			init: function () {
