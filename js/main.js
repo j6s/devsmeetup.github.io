@@ -7,7 +7,7 @@
 	'use strict';
 
 	// The loader
-	var L = (function () {
+	var L = function () {
 		var pathPrefix = 'content/';
 		var fileSuffix = '.html';
 
@@ -72,14 +72,54 @@
 		return {
 			load: _load
 		};
-	}());
+	};
 
 
-	// Onload, load index content
-	L.load('single-view.tpl', '.site-content');
+	// Class to website's functionality
+	var D = function () {
 
-	// And load teaser
-	L.load('teaser', '.site-teaser');
+		// Initialize Loader
+		var Loader = new L();
+
+		var _mainAction = 'index';
+
+		var _mainHandler = function () {
+			var action = window.location.hash.replace('#', '');
+
+			console.log(action);
+
+			// Load index content
+			if (action === '' || action === '!') {
+
+				Loader.load(_mainAction, '.site-content');
+
+				// And load teaser
+				Loader.load('teaser', '.site-teaser');
+
+				return;
+			}
+
+			Loader.load(action, '.site-content');
+
+		};
+
+		return {
+			init: function () {
+
+				// Initialize hash change events
+				window.addEventListener('hashchange', _mainHandler, false);
+				window.addEventListener('load', _mainHandler, false);
+			}
+		};
+
+	};
+
+
+
+	// Initialize all functionality
+	var d = D();
+
+	d.init();
 
 }());
 
