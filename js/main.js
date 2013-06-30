@@ -82,11 +82,10 @@
 		var Loader = new L();
 
 		var _mainAction = 'index';
+		var _allowedActions = ['index', 'archive', 'teaser'];
 
 		var _mainHandler = function () {
-			var action = window.location.hash.replace('#', '');
-
-			console.log(action);
+			var action = window.location.hash.replace('#/', '');
 
 			// Load index content
 			if (action === '' || action === '!') {
@@ -99,8 +98,14 @@
 				return;
 			}
 
-			Loader.load(action, '.site-content');
+			// Otherwise load some other content
+			if (_allowedActions.indexOf(action)) {
+				document.querySelector('.site-teaser').innerHTML = '';
 
+				Loader.load(action, '.site-content');
+
+				window.scrollTo(0);
+			}
 		};
 
 		return {
