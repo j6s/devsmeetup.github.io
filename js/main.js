@@ -8,7 +8,6 @@
 
 	// The loader
 	var L = (function () {
-		var _main = document.querySelector('.site-content'); // main element to insert
 		var pathPrefix = 'content/';
 		var fileSuffix = '.html';
 
@@ -27,7 +26,8 @@
 		};
 
 		// Main loading function
-		var _load = function (what, callback) {
+		var _load = function (what, where, callback) {
+			var _main = document.querySelector(where); // main element to insert
 
 			// Initialize XHR
 			var xhr = new XMLHttpRequest();
@@ -76,7 +76,10 @@
 
 
 	// Onload, load index content
-	L.load('index');
+	L.load('single-view.tpl', '.site-content');
+
+	// And load teaser
+	L.load('teaser', '.site-teaser');
 
 }());
 
