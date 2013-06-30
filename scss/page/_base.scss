@@ -123,15 +123,16 @@ a {
 }
 
 .site-teaser {
-	background: transparent url('../img/slider.jpg') no-repeat top center;
+	background: url(../img/slider.jpg) no-repeat top center;
+	overflow: hidden;
+
 	color: $mainTextColor;
-	padding: 60px 0;
 
 	.teaser-content {
 		@extend %container;
-		background-size: 100% auto;
+		@include x-rem(margin, 3.5 auto);
 
-		background: white;
+		background-color: #fff;
 		padding-bottom: 0;
 		text-align: left;
 	}

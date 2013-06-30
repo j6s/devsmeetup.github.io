@@ -605,13 +605,14 @@ a:hover {
 }
 
 .site-teaser {
-  background: transparent url("../img/slider.jpg") no-repeat top center;
+  background: url(../img/slider.jpg) no-repeat top center;
+  overflow: hidden;
   color: #222222;
-  padding: 60px 0;
 }
 .site-teaser .teaser-content {
-  background-size: 100% auto;
-  background: white;
+  margin: 56px auto;
+  margin: 3.5rem auto;
+  background-color: #fff;
   padding-bottom: 0;
   text-align: left;
 }
