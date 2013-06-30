@@ -748,6 +748,13 @@ a:hover {
   margin-bottom: 0.1em;
   text-shadow: 0 1px 1px rgba(13, 73, 99, 0.8);
 }
+.site-header h1 > a {
+  color: #fff;
+  text-decoration: none;
+}
+.site-header h1 > a:visited {
+  color: #fff;
+}
 .site-header > p {
   font-size: 16px;
   font-size: 1rem;
