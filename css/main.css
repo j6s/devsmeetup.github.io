@@ -802,12 +802,14 @@ a:hover {
 }
 
 .organizers a {
-  padding: 8px 0;
-  padding: 0.5rem 0;
-  line-height: 64px;
-  line-height: 4rem;
+  padding: 24px 0;
+  padding: 1.5rem 0;
+  width: 192px;
+  width: 12rem;
   display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
+  text-align: left;
 }
 .organizers a:hover img {
   -webkit-transform: scale(1.05, 1.05);
@@ -821,13 +823,14 @@ a:hover {
   width: 4rem;
   height: 64px;
   height: 4rem;
-  margin: 0 8px;
-  margin: 0 0.5rem;
+  margin: -16px 8px;
+  margin: -1rem 0.5rem;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-transition: 0.2s ease-out;
   -o-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
+  float: left;
 }
 .organizers .amp {
   font-size: 19.2px;

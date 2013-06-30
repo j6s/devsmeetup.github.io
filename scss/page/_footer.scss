@@ -24,11 +24,13 @@
 
 .organizers {
 	a {
-		@include x-rem(padding, 0.5 0);
-		@include x-rem(line-height, 4);
+		@include x-rem(padding, 1.5 0);
+		@include x-rem(width, 12);
 
 		display: inline-block;
+		vertical-align: middle;
 		text-decoration: none;
+		text-align: left;
 
 		&:hover {
 			img {
@@ -40,9 +42,11 @@
 	img {
 		@include x-rem(width, 4);
 		@include x-rem(height, 4);
-		@include x-rem(margin, 0 0.5);
+		@include x-rem(margin, -1 0.5);
 		@include x-border-radius(50%);
 		@include x-transition(0.2s ease-out);
+
+		float: left;
 	}
 
 	.amp {
