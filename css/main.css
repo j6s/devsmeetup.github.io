@@ -622,6 +622,7 @@ a:hover {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   float: left;
+  max-width: 130px;
 }
 .site-teaser .btn {
   text-align: right;
@@ -673,6 +674,7 @@ a:hover {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   float: right;
+  max-width: 120px;
 }
 
 .share {

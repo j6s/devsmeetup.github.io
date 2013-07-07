@@ -142,6 +142,7 @@ a {
 		@include x-border-radius(50%);
 
 		float: left;
+		max-width: 130px;
 	}
 
 	.btn {
@@ -198,6 +199,7 @@ a {
 		@include x-border-radius(50%);
 
 		float: right;
+		max-width: 120px;
 	}
 }
 
