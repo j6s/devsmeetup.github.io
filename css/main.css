@@ -677,6 +677,14 @@ a:hover {
   max-width: 120px;
 }
 
+.speakerContainer {
+  background: #f3f3f3;
+  padding: 20px;
+}
+.speakerContainer h3 {
+  margin-top: 0;
+}
+
 .share {
   margin: 48px 0;
   margin: 3rem 0;

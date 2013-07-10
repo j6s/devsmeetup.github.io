@@ -203,6 +203,15 @@ a {
 	}
 }
 
+.speakerContainer {
+	background: $grayLight;
+	padding: 20px;
+
+	h3 {
+		margin-top: 0;
+	}
+}
+
 .share {
 	@include x-rem(margin, 3 0);
 
