@@ -203,9 +203,11 @@ a {
 	}
 }
 
-.speakerContainer {
+.speaker {
+	@include x-rem(padding, 1);
+
 	background: $grayLight;
-	padding: 20px;
+	overflow: hidden;
 
 	h3 {
 		margin-top: 0;

@@ -677,11 +677,13 @@ a:hover {
   max-width: 120px;
 }
 
-.speakerContainer {
+.speaker {
+  padding: 16px;
+  padding: 1rem;
   background: #f3f3f3;
-  padding: 20px;
+  overflow: hidden;
 }
-.speakerContainer h3 {
+.speaker h3 {
   margin-top: 0;
 }
 
