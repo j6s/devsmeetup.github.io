@@ -9,8 +9,8 @@
 
 // Helpers
 @import "helpers/variables";
-@import "../components/sass-mixins/mixins";
-@import "../components/normalize-scss/normalize";
+@import "../bower_components/sass-mixins/mixins";
+@import "../bower_components/normalize-scss/normalize";
 @import "helpers/helpers";
 
 // Layout
