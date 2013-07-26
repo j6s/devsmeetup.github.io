@@ -73,6 +73,19 @@ module.exports = function (grunt) {
 			}
 		},
 
+		concat: {
+			options: {
+				separator: ',',
+				banner: '[',
+				footer: ']'
+			},
+
+			meetups: {
+				src: ['meetups/*.json'],
+				dest: 'content/meetups.json',
+			},
+		},
+
 		copy: {
 			deploy: {
 				files: [{
@@ -103,6 +116,11 @@ module.exports = function (grunt) {
 					'js/*.js'
 				],
 				tasks: 'jshint'
+			},
+
+			json: {
+				files: ['meetups/*.json'],
+				tasks: 'concat:meetups'
 			}
 		},
 
@@ -123,6 +141,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
