@@ -196,12 +196,12 @@
 						data = JSON.parse(data);
 
 						// Put data in a wrapper object
-						data.meetups = data;
+						data.meetups = data.reverse();
 
 						// Set data globalls
 						meetupsData = data;
 
-						_handleMeetup(action, data);
+						_handleMeetup(action, meetupsData);
 					});
 				}
 
