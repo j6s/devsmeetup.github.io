@@ -6,6 +6,7 @@
 		"name": "Freiraum",
 		"url": "http://freiraumfreiburg.de/"
 	},
+	"lanyrd": "http://lanyrd.com/2013/developer-meetup-freiburg/",
 
 	"abstract": {
 		"title": "Behavior Driven Development im Web mit Behat/Mink",
