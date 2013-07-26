@@ -6,13 +6,13 @@
 (function () {
 	'use strict';
 
-	// The loader
-	var L = function () {
-		var pathPrefix = 'content/';
-		var fileSuffix = '.html';
+	var meetupsData;
+
+	// Some helpers
+	var Helper = {
 
 
-		var _createElement = function (htmlString) {
+		createElement: function (htmlString) {
 			var fragment = document.createDocumentFragment();
 			var temp = document.createElement('div');
 
@@ -23,18 +23,37 @@
 			}
 
 			return fragment;
-		};
+		},
+
+		// Content injection
+		setContent: function (selector, content) {
+			var fragment;
+			var element = document.querySelector(selector);
+
+			// Delete all content from content element
+			element.innerHTML = '';
+
+			// Create a fragment from the input
+			fragment = Helper.createElement(content);
+
+			// Append the content
+			element.appendChild(fragment);
+		}
+	};
+
+	// The loader
+	var L = function () {
+		var pathPrefix = 'content/';
+		var fileSuffix = '.html';
 
 		// Main loading function
 		var _load = function (what, where, callback) {
-			var _main = document.querySelector(where); // main element to insert
+			var file;
 
 			// Initialize XHR
 			var xhr = new XMLHttpRequest();
 
 			var _ensureReadiness = function () {
-				var fragment;
-
 				if (xhr.readyState < 4) {
 					return;
 				}
@@ -46,25 +65,28 @@
 				// We're ok
 				if (xhr.readyState === 4) {
 
-					// Create a fragment from the input
-					fragment = _createElement(xhr.response);
-
-					// Append the content
-					_main.appendChild(fragment);
+					// If we want to create a new element
+					if (where !== '') {
+						Helper.setContent(where, xhr.responseText);
+					}
 
 					// Call a callback
 					if (typeof callback === 'function') {
-						callback.call(this);
+						callback.call(this, xhr.responseText);
 					}
 				}
 			};
 
-			// Delete all content from main element
-			_main.innerHTML = '';
+			// Correct file path
+			if (what.indexOf('.') > -1) {
+				fileSuffix = '';
+			}
+
+			file = pathPrefix + what + fileSuffix;
 
 			// New XHR
 			xhr.onreadystatechange = _ensureReadiness;
-			xhr.open('GET', pathPrefix + what + fileSuffix, true);
+			xhr.open('GET', file, true);
 			xhr.send();
 		};
 
@@ -82,7 +104,13 @@
 		var Loader = new L();
 
 		var _mainAction = 'index';
-		var _allowedActions = ['index', 'archive', 'teaser'];
+		var _allowedActions = ['index', 'teaser'];
+
+		// Compiled templates
+		var templates = {
+			archive: Hogan.compile(document.getElementById('template-archive').innerHTML),
+			single: Hogan.compile(document.getElementById('template-single').innerHTML)
+		};
 
 		// Inject script for twitter
 		var _injectTwitterButton = function () {
@@ -101,8 +129,40 @@
 			}
 		};
 
+		// Filter single view and return correct one if available
+		var _findSingleMeetup = function (url) {
+			var i = 0;
+			for (; i < meetupsData.meetups.length; i++) {
+				if (meetupsData.meetups[i].url === url) {
+					return meetupsData.meetups[i];
+				}
+			}
+
+			return undefined;
+		};
+
+		// Handler for meetup: either load single view or list
+		var _handleMeetup = function (action, data) {
+			var content;
+			var single;
+
+			action = action.split('/');
+
+			if (action[1]) {
+				single = _findSingleMeetup(action[1]);
+
+				content = templates.single.render(single);
+			} else {
+				content = templates.archive.render(data);
+			}
+
+			Helper.setContent('.site-content', content);
+		};
+
 		var _mainHandler = function () {
 			var action = window.location.hash.replace('#/', '');
+
+			document.querySelector('.site-teaser').innerHTML = '';
 
 			// Load index content
 			if (action === '' || action === '!') {
@@ -116,10 +176,34 @@
 			}
 
 			// Otherwise load some other content
-			if (_allowedActions.indexOf(action)) {
+			if (_allowedActions.indexOf(action) > -1) {
 				document.querySelector('.site-teaser').innerHTML = '';
 
 				Loader.load(action, '.site-content');
+
+				window.scrollTo(0);
+			} else if (action.indexOf('meetup') > -1) {
+
+				// Meetup data already available
+				if (meetupsData) {
+					_handleMeetup(action, meetupsData);
+
+				// Load meetup data
+				} else {
+					Loader.load('meetups.json', '', function (data) {
+
+						// Parse data
+						data = JSON.parse(data);
+
+						// Put data in a wrapper object
+						data.meetups = data;
+
+						// Set data globalls
+						meetupsData = data;
+
+						_handleMeetup(action, data);
+					});
+				}
 
 				window.scrollTo(0);
 			}
