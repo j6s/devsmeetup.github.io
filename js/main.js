@@ -43,11 +43,11 @@
 
 	// The loader
 	var L = function () {
-		var pathPrefix = 'content/';
-		var fileSuffix = '.html';
 
 		// Main loading function
 		var _load = function (what, where, callback) {
+			var pathPrefix = 'content/';
+			var fileSuffix = '.html';
 			var file;
 
 			// Initialize XHR
