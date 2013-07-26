@@ -61,7 +61,45 @@
 
 		<div id="fb-root"></div>
 
-		<script src="js/hogan-3.0.0.js"></script>
+		<script id="template-archive" type="text/x-handlebars-template">
+			<section class="archive" id="meetups">
+				{{#meetups}}
+					<article>
+						<header>
+							<h2><a href="#/meetup/{{url}}">{{title}}</a></h2>
+							<small>{{date}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
+						</header>
+						<p>{{abstract.short}}</p>
+					</article>
+				{{/meetups}}
+
+				<p class="btn"><a href="#">Zurück</a></p>
+			</section>
+		</script>
+
+		<script id="template-single" type="text/x-handlebars-template">
+			<article>
+				<header>
+					<h2>{{title}}</h2>
+					<small>{{date}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
+				</header>
+
+				<p>{{abstract.intro}}</p>
+
+				<p><strong>{{abstract.title}}</strong></p>
+
+				{{{abstract.text}}}
+
+				<footer>
+					<h3 id="speaker">{{speaker.name}}</h3>
+					<a href="{{speaker.website}}"><img src="{{speaker.image}}" alt="{{speaker.name}}" class=""></a>
+
+					{{{speaker.description}}}
+				</footer>
+			</article>
+		</script>
+
+		<script src="js/vendor/hogan-3.0.0.js"></script>
 		<script src="js/main.js"></script>
 
 
