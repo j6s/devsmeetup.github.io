@@ -36,6 +36,6 @@ Freiraum wird uns zur Verfügung gestellt von
 
 ### Organisation
 
-| [![twitter/t3ndh](http://api.twitter.com/1/users/profile_image/t3ndh?size=bigger)](https://twitter.com/t3ndh "Folge @t3ndh auf Twitter") | [![twitter/drublic](http://api.twitter.com/1/users/profile_image/drublic?size=bigger)](https://twitter.com/drublic "Folge @drublic auf Twitter") |
+| [![twitter/t3ndh](https://twitter.com/api/users/profile_image/t3ndh?size=bigger)](https://twitter.com/t3ndh "Folge @t3ndh auf Twitter") | [![twitter/drublic](https://twitter.com/api/users/profile_image/drublic?size=bigger)](https://twitter.com/drublic "Folge @drublic auf Twitter") |
 |---|---|
 | [Nico de Haen](http://www.ndh-websolutions.de/) | [Hans Christian Reinl](http://drublic.de/) |
