@@ -23,7 +23,8 @@ Betrachtungsweise dieses Themas differenzeren.
 
 
 ### Location
-[Freiraum](http://freiraumfreiburg.de/) – nähe Bahnhof
+[Freiraum](http://freiraumfreiburg.de/) – nähe Bahnhof (siehe
+[Karte](map.geojson))
 
 
 ### Sponsoren
