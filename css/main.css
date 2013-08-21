@@ -668,15 +668,6 @@ a:hover {
   width: 100%;
 }
 
-.toc img {
-  margin: 0 0 16px 16px;
-  margin: 0 0 1rem 1rem;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  float: right;
-  max-width: 120px;
-}
-
 .speaker {
   padding: 16px;
   padding: 1rem;
@@ -685,6 +676,14 @@ a:hover {
 }
 .speaker h3 {
   margin-top: 0;
+}
+.speaker img {
+  margin: 0 0 16px 16px;
+  margin: 0 0 1rem 1rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  float: right;
+  max-width: 120px;
 }
 
 .share {
