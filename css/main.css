@@ -727,7 +727,7 @@ a:hover {
 }
 
 /**
- * The archive's footer
+ * The archive list view
  */
 .archive article {
   padding: 16px;
@@ -764,6 +764,14 @@ a:hover {
 }
 .archive footer {
   margin-top: 40px;
+}
+
+/**
+ * The archive detail view
+ */
+.archive-article footer {
+  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 /**

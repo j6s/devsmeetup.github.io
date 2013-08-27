@@ -1,5 +1,5 @@
 /**
- * The archive's footer
+ * The archive list view
  */
 
 .archive {
@@ -41,4 +41,13 @@
 	footer {
 		margin-top: 40px;
 	}
+}
+
+/**
+ * The archive detail view
+ */
+.archive-article {
+  footer {
+    @include x-rem(margin-top, 2.5);
+  }
 }

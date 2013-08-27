@@ -88,29 +88,32 @@
 		</script>
 
 		<script id="template-single" type="text/x-handlebars-template">
-			<article>
-				<header>
-					<h2>{{title}}</h2>
-					<small>{{date}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
+      <section class="archive-article" id="archive-article">
+  			<article>
+  				<header>
+  					<h2>{{title}}</h2>
+  					<small>{{date}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
 
-					<p><a href="{{lanyrd}}">Event bei Lanyrd</a></p>
-				</header>
+  				</header>
 
-				<p>{{abstract.intro}}</p>
+  				<p>{{abstract.intro}}</p>
 
-				<p><strong>{{abstract.title}}</strong></p>
+  				<p><strong>{{abstract.title}}</strong></p>
 
-				{{{abstract.text}}}
+  				{{{abstract.text}}}
 
-				<footer>
-					<div class="speaker" id="speaker">
-						<h3 id="speaker-heading">{{speaker.name}}</h3>
-						<a href="{{speaker.website}}"><img src="{{speaker.image}}" alt="{{speaker.name}}" class=""></a>
+          <p class="btn"><a href="{{lanyrd}}">Event bei Lanyrd</a></p>
 
-						{{{speaker.description}}}
-					</div>
-				</footer>
-			</article>
+  				<footer>
+  					<div class="speaker" id="speaker">
+  						<h3 id="speaker-heading">{{speaker.name}}</h3>
+  						<a href="{{speaker.website}}"><img src="{{speaker.image}}" alt="{{speaker.name}}" class=""></a>
+
+  						{{{speaker.description}}}
+  					</div>
+  				</footer>
+  			</article>
+      </section>
 		</script>
 
 		<script src="js/vendor/hogan-3.0.0.js"></script>
