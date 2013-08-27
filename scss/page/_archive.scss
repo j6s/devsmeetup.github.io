@@ -3,8 +3,32 @@
  */
 
 .archive {
+  article {
+    @include x-rem(padding, 1);
+    @include x-rem(margin-bottom, 2.5);
+
+    background: $grayLight;
+
+    &:first-child {
+      @include x-rem(margin-top, 2.5);
+    }
+  }
+
 	h2 {
-		margin-bottom: 0;
+    @include x-rem(margin-bottom, 1.25);
+
+    margin-top: 0;
+
+    a {
+      @include x-transition(.2s);
+
+      color: $mainTextColor;
+      text-decoration: none;
+
+      &:hover {
+        color: $highlight;
+      }
+    }
 	}
 
 	img {
