@@ -62,17 +62,6 @@ module.exports = function (grunt) {
 			deploy: ['dist']
 		},
 
-		requirejs: {
-			compile: {
-				options: {
-					baseUrl: 'js/',
-					mainConfigFile: 'js/config.js',
-					include: ['Vendor/require'],
-					out: 'dist/js/main-<%= pkg.version %>.min.js'
-				}
-			}
-		},
-
 		concat: {
 			options: {
 				separator: ',',
@@ -92,15 +81,6 @@ module.exports = function (grunt) {
 					src: ['js/**'],
 					dest: 'dist/'
 				}]
-			}
-		},
-
-		jasmine: {
-			src: 'js/*.js',
-			options: {
-				specs: 'tests/*.js',
-				vendor: ['js/vendor/jquery-1.9.1.min.js'],
-				outfile: 'tests/_SpecRunner.html'
 			}
 		},
 
@@ -146,12 +126,12 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
 	// A task for development
-	grunt.registerTask('dev', ['jshint', 'jasmine', 'sass:dev']);
+	grunt.registerTask('dev', ['jshint', 'sass:dev']);
 
 	// A task for deployment
-	grunt.registerTask('deploy', ['jshint', 'jasmine', 'clean', 'modernizr', 'sass:deploy', 'requirejs', 'copy']);
+	grunt.registerTask('deploy', ['jshint', 'clean', 'modernizr', 'sass:deploy', 'copy']);
 
 	// Default task
-	grunt.registerTask('default', ['jshint', 'jasmine', 'sass:dev', 'requirejs', 'copy']);
+	grunt.registerTask('default', ['jshint', 'sass:dev', 'copy']);
 
 };
