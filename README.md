@@ -37,6 +37,6 @@ Freiraum wird uns zur Verfügung gestellt von
 
 ### Organisation
 
-| [![twitter/t3ndh](https://twitter.com/api/users/profile_image/t3ndh?size=bigger)](https://twitter.com/t3ndh "Folge @t3ndh auf Twitter") | [![twitter/drublic](https://twitter.com/api/users/profile_image/drublic?size=bigger)](https://twitter.com/drublic "Folge @drublic auf Twitter") |
+| [![twitter/t3ndh](https://twitter.com/api/users/profile_image/t3ndh?size=bigger)](https://twitter.com/t3ndh "Folge @t3ndh auf Twitter") | [![twitter/drublic](https://twitter.com/api/users/profile_image/drublic?size=bigger)](https://twitter.com/drublic "Folge @drublic auf Twitter") | [![twitter/nimius_design](https://twitter.com/api/users/profile_image/nimius_design?size=bigger)](https://twitter.com/nimius_design "Folge @nimius_design auf Twitter") |
 |---|---|
-| [Nico de Haen](http://www.ndh-websolutions.de/) | [Hans Christian Reinl](http://drublic.de/) |
+| [Nico de Haen](http://www.ndh-websolutions.de/) | [Hans Christian Reinl](http://drublic.de/) | [Nicki Uhlbach](http://nimius.net/) |
