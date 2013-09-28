@@ -597,6 +597,31 @@ a:hover {
   text-decoration: none;
 }
 
+/**
+ * Button placeholder
+ */
+.btn > a, .newsletter input[type="submit"] {
+  margin: 32px 0;
+  margin: 2rem 0;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
+  -webkit-box-shadow: 0 3px 0 #cc8800;
+  box-shadow: 0 3px 0 #cc8800;
+  position: relative;
+  display: inline-block;
+  background: #ffaa00;
+  color: #fff;
+  text-decoration: none;
+}
+.btn > a:visited, .newsletter input[type="submit"]:visited {
+  color: #fff;
+}
+.btn > a:active, .newsletter input[type="submit"]:active {
+  -webkit-box-shadow: 0 1px 0 #cc8800;
+  box-shadow: 0 1px 0 #cc8800;
+  top: 2px;
+}
+
 .site-teaser .teaser-content, .site-content, .site-header .header-content {
   padding: 32px 32px 16px;
   padding: 2rem 2rem 1rem;
@@ -631,26 +656,27 @@ a:hover {
 .btn {
   text-align: center;
 }
-.btn > a {
-  margin: 32px 0;
-  margin: 2rem 0;
-  padding: 8px 16px;
-  padding: 0.5rem 1rem;
-  -webkit-box-shadow: 0 3px 0 #cc8800;
-  box-shadow: 0 3px 0 #cc8800;
-  position: relative;
-  display: inline-block;
-  background: #ffaa00;
-  color: #fff;
-  text-decoration: none;
+
+.newsletter label {
+  padding-right: 8px;
+  padding-right: 0.5rem;
 }
-.btn > a:visited {
-  color: #fff;
+.newsletter input[type="email"] {
+  font-size: 20.8px;
+  font-size: 1.3rem;
+  padding: 3.2px 8px;
+  padding: 0.2rem 0.5rem;
 }
-.btn > a:active {
-  -webkit-box-shadow: 0 1px 0 #cc8800;
-  box-shadow: 0 1px 0 #cc8800;
-  top: 2px;
+.newsletter input[type="submit"] {
+  top: -4px;
+  margin: 0;
+  border: 0;
+}
+.newsletter input[type="submit"]:active {
+  top: -2px;
+}
+.newsletter input[type="submit"]:focus {
+  outline: 0;
 }
 
 .when {

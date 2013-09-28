@@ -63,6 +63,15 @@
 				</a>
 			</p>
 
+			<p>Folge uns auf Twitter</p>
+
+			<p>
+				<a href="https://twitter.com/devsmeetup"
+					class="twitter-follow-button"
+					data-show-count="false"
+					data-size="large">Folge @devsmeetup</a>
+			</p>
+
 			<p class="footer-links">
 				<a href="mailto:info@drublic.de?subject=Devs%20Meetup">Kontakt</a>
 				<a href="http://drublic.de/#imprint">Impressum</a>
@@ -88,32 +97,31 @@
 		</script>
 
 		<script id="template-single" type="text/x-handlebars-template">
-      <section class="archive-article" id="archive-article">
-  			<article>
-  				<header>
-  					<h2>{{title}}</h2>
-  					<small>{{date}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
+			<section class="archive-article" id="archive-article">
+				<article>
+					<header>
+						<h2>{{title}}</h2>
+						<small>{{date}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
+					</header>
 
-  				</header>
+					<p>{{abstract.intro}}</p>
 
-  				<p>{{abstract.intro}}</p>
+					<p><strong>{{abstract.title}}</strong></p>
 
-  				<p><strong>{{abstract.title}}</strong></p>
+					{{{abstract.text}}}
 
-  				{{{abstract.text}}}
+					<p class="btn"><a href="{{lanyrd}}">Event bei Lanyrd</a></p>
 
-          <p class="btn"><a href="{{lanyrd}}">Event bei Lanyrd</a></p>
+					<footer>
+						<div class="speaker" id="speaker">
+							<h3 id="speaker-heading">{{speaker.name}}</h3>
+							<a href="{{speaker.website}}"><img src="{{speaker.image}}" alt="{{speaker.name}}" class=""></a>
 
-  				<footer>
-  					<div class="speaker" id="speaker">
-  						<h3 id="speaker-heading">{{speaker.name}}</h3>
-  						<a href="{{speaker.website}}"><img src="{{speaker.image}}" alt="{{speaker.name}}" class=""></a>
-
-  						{{{speaker.description}}}
-  					</div>
-  				</footer>
-  			</article>
-      </section>
+							{{{speaker.description}}}
+						</div>
+					</footer>
+				</article>
+			</section>
 		</script>
 
 		<script src="js/vendor/hogan-3.0.0.js"></script>
