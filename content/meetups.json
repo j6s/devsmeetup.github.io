@@ -94,4 +94,28 @@
     "description": "<p>Nach dem er sein Mathe Diplom im Juni 2013 in Freiburg gemacht hat arbeitet Friedel derzeit für das Britische Startup Applicationcraft an der Web IDE Codio. In seiner Freizeit ist er Maintainer des Testrunners Karma und seines kleinen zwei jährigen Sohnes Dante.</p>"
   }
 }
+,{
+  "title": "PyPy or how to produce JIT-compilers for Python, Ruby, PHP",
+  "date": "13. Dezember 2013",
+  "url": "pypy-or-how-to-produce-jit-compilers-for-python-ruby-php",
+  "location": {
+    "name": "Freiraum",
+    "url": "http://freiraumfreiburg.de/"
+  },
+  "lanyrd": "http://lanyrd.com/2013/developer-meetup-freiburg-5/",
+
+  "abstract": {
+    "title": "PyPy or how to produce JIT-compilers for Python, Ruby, PHP",
+    "intro": "",
+    "text": "<p>Holger wird über das PyPy Project sprechen, eine compiler tool chain die derzeit Just-In-Time Interpreter für Python, Ruby und PHP erzeugen kann. Der Python Interpreter lässt Python Programme 5-10 mal schneller ablaufen als das reguläre CPython (Python Implementierung in C).</p> <p>Holger wird sowohl die technische Architektur des Projektes als auch den Entwicklungsprozess und die Historie des Projektes besprechen. Er ist ein Gründer des Projektes und war acht Jahre ein Kernentwickler und hat ein groesses EU Forschungsprojekt sowie Folgeverträge mit Google und Nokia mitgeleitet.</p>",
+    "short": "Der Python Interpreter lässt Python Programme 5-10 mal schneller ablaufen als das reguläre CPython (Python Implementierung in C)."
+  },
+
+  "speaker": {
+    "name": "Holger Krekel",
+    "website": "http://twitter.com/hpk42",
+    "image": "img/hkrekel.jpg",
+    "description": "<p>Holger Krekel is long-term involved with the Python community. He is best known for founding the PyPy project and as a core developer of the pytest and tox testing tools. He initiated and maintains the execnet python-to-python project among a number of smaller tools. He regularly gives in-house and open trainings. Besides many technical talks on Python related conferences, he gave keynotes at EuroPython, Pycon Russia and Pygrunn in 2013.</p>"
+  }
+}
 ]
