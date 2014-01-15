@@ -1,0 +1,24 @@
+{
+  "title": "Das Lazy-Developers-Toolkit",
+  "date": "27. Januar 2014",
+  "url": "lazy-developers-toolkit",
+  "location": {
+    "name": "Freiraum",
+    "url": "http://freiraumfreiburg.de/"
+  },
+  "lanyrd": "http://lanyrd.com/cwkzc",
+
+  "abstract": {
+    "title": "Das Lazy-Developers-Toolkit",
+    "intro": "",
+    "text": "<p>Eine Beschreibung meines Web-Development-Workflows mit Ruby-Tools am Beispiel von <a href="http://backhub.co">backhub.co</a></p>",
+    "short": "Eine Beschreibung meines Web-Development-Workflows mit Ruby-Tools am Beispiel von <a href="http://backhub.co">backhub.co</a>"
+  },
+
+  "speaker": {
+    "name": "Christian Schlack",
+    "website": "https://twitter.com/gebruederheitz",
+    "image": "img/cschlack.jpg",
+    "description": "<p>Basic mit 12 Jahren (erster Computer C64), ASM mit 13, C mit 15, PASCAL mit 16, später Perl, PHP und JavaScript. Schon früh in den Programmierzaubertrank gefallen schreibt Christian heute am liebsten Programme in Ruby.</p>"
+  }
+}
