@@ -132,7 +132,8 @@
 		// Filter single view and return correct one if available
 		var _findSingleMeetup = function (url) {
 			var i = 0;
-			for (; i < meetupsData.meetups.length; i++) {
+			var max = meetupsData.meetups.length;
+			for (; i < max; i++) {
 				if (meetupsData.meetups[i].url === url) {
 					return meetupsData.meetups[i];
 				}

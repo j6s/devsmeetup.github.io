@@ -107,8 +107,8 @@
   "abstract": {
     "title": "Das Lazy-Developers-Toolkit",
     "intro": "",
-    "text": "<p>Eine Beschreibung meines Web-Development-Workflows mit Ruby-Tools am Beispiel von <a href="http://backhub.co">backhub.co</a></p>",
-    "short": "Eine Beschreibung meines Web-Development-Workflows mit Ruby-Tools am Beispiel von <a href="http://backhub.co">backhub.co</a>"
+    "text": "<p>Eine Beschreibung meines Web-Development-Workflows mit Ruby-Tools am Beispiel von <a href=\"http://backhub.co\">backhub.co</a></p>",
+    "short": "Eine Beschreibung meines Web-Development-Workflows mit Ruby-Tools am Beispiel von <a href=\"http://backhub.co\">backhub.co</a>"
   },
 
   "speaker": {
