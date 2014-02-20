@@ -201,6 +201,8 @@ a {
 
 // Speaker
 .speaker-profile {
+  @include x-rem(margin-top, 2);
+
   position: relative;
   width: 180px;
 
@@ -293,6 +295,13 @@ a {
     &:hover {
       display: block;
     }
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .abstract-container {
+    width: 26em;
+    float: right;
   }
 }
 

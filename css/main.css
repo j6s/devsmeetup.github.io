@@ -664,6 +664,8 @@ a:hover {
 }
 
 .speaker-profile {
+  margin-top: 32px;
+  margin-top: 2rem;
   position: relative;
   width: 180px;
 }
@@ -756,6 +758,12 @@ a:hover {
   display: block;
 }
 
+@media screen and (min-width: 60em) {
+  .abstract-container {
+    width: 26em;
+    float: right;
+  }
+}
 .newsletter label {
   padding-right: 8px;
   padding-right: 0.5rem;
