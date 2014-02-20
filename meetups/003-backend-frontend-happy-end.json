@@ -1,6 +1,11 @@
 {
 	"title": "Backend - Frontend - Happy End?",
-	"date": "27. September 2013",
+  "date": {
+    "day": "27",
+    "month": "sep",
+    "year": "2013",
+    "all": "27. September 2013"
+  },
 	"url": "backend-frontend-happy-end",
 	"location": {
 		"name": "Freiraum",

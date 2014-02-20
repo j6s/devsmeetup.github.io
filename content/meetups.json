@@ -1,6 +1,11 @@
 [{
 	"title": "Behavior Driven Development",
-	"date": "12. Juni 2013",
+  "date": {
+    "day": "12",
+    "month": "jun",
+    "year": "2013",
+    "all": "12. Juni 2013"
+  },
 	"url": "bdd",
 	"location": {
 		"name": "Freiraum",
@@ -24,7 +29,12 @@
 }
 ,{
 	"title": "Funktionale Programmierung",
-	"date": "17. Juli 2013",
+  "date": {
+    "day": "17",
+    "month": "jul",
+    "year": "2013",
+    "all": "17. Juli 2013"
+  },
 	"url": "functional-programming",
 	"location": {
 		"name": "Freiraum",
@@ -48,7 +58,12 @@
 }
 ,{
 	"title": "Backend - Frontend - Happy End?",
-	"date": "27. September 2013",
+  "date": {
+    "day": "27",
+    "month": "sep",
+    "year": "2013",
+    "all": "27. September 2013"
+  },
 	"url": "backend-frontend-happy-end",
 	"location": {
 		"name": "Freiraum",
@@ -72,7 +87,12 @@
 }
 ,{
   "title": "Testing mit Karma",
-  "date": "18. Oktober 2013",
+  "date": {
+    "day": "18",
+    "month": "okt",
+    "year": "2013",
+    "all": "18. Oktober 2013"
+  },
   "url": "testing-mit-karma",
   "location": {
     "name": "Freiraum",
@@ -96,7 +116,12 @@
 }
 ,{
   "title": "Das Lazy-Developers-Toolkit",
-  "date": "27. Januar 2014",
+  "date": {
+    "day": "27",
+    "month": "jan",
+    "year": "2014",
+    "all": "27. Januar 2014"
+  },
   "url": "lazy-developers-toolkit",
   "location": {
     "name": "Freiraum",
@@ -108,7 +133,7 @@
     "title": "Das Lazy-Developers-Toolkit",
     "intro": "",
     "text": "<p>Eine Beschreibung meines Web-Development-Workflows mit Ruby-Tools am Beispiel von <a href=\"http://backhub.co\">backhub.co</a></p>",
-    "short": "Eine Beschreibung meines Web-Development-Workflows mit Ruby-Tools am Beispiel von <a href=\"http://backhub.co\">backhub.co</a>"
+    "short": "Eine Beschreibung meines Web-Development-Workflows mit Ruby-Tools am Beispiel von backhub.co."
   },
 
   "speaker": {

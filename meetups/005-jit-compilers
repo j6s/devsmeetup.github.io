@@ -1,6 +1,11 @@
 {
   "title": "PyPy or how to produce JIT-compilers for Python, Ruby, PHP",
-  "date": "13. Dezember 2013",
+  "date": {
+    "day": "13",
+    "month": "dez",
+    "year": "2013",
+    "all": "13. Dezember 2013"
+  },
   "url": "jit-compilers",
   "location": {
     "name": "Freiraum",

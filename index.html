@@ -90,7 +90,7 @@
 					<article>
 						<header>
 							<h2><a href="#/meetup/{{url}}">{{title}}</a></h2>
-							<small>{{date}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
+							<small>{{date.all}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
 						</header>
 						<p>{{abstract.short}}</p>
 					</article>
@@ -101,38 +101,36 @@
 		</script>
 
 		<script id="template-single" type="text/x-handlebars-template">
-			<section class="archive-article" id="archive-article">
+			<section class="archive-article clearfix" id="archive-article">
 				<article>
           <div class="speaker-profile">
             <div class="speaker-date">
-              <span class="date">25</span>
-              <span class="month">FEB</span>
+              <span class="date">{{date.day}}</span>
+              <span class="month">{{date.month}}</span>
             </div>
             <a href="{{speaker.website}}"><img src="{{speaker.image}}" alt="{{speaker.name}}"></a>
 
             <div class="speaker-info">
               <div class="info" id="info-button">i</div>
               <div class="text">
-                <h3>Christian Schlack</h3>
+                <h3>{{speaker.name}}</h3>
                 {{{speaker.description}}}
               </div>
             </div>
           </div>
 
-          <header>
-            <h2>{{abstract.title}}</h2>
-            <h3>{{speaker.name}}</h3>
-          </header>
+          <div class="abstract-container">
+            <header>
+              <h2>{{abstract.title}}</h2>
+              <h3>{{speaker.name}}</h3>
+            </header>
 
-          <p>{{{abstract.text}}}</p>
+            {{{abstract.text}}}
 
-          {{abstract.intro}}
+            {{abstract.intro}}
 
-					<p class="btn"><a href="{{lanyrd}}">Event bei Lanyrd</a></p>
-
-          <footer>
-            <small>{{date}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
-          </footer>
+  					<p class="btn"><a href="{{lanyrd}}">Event bei Lanyrd</a></p>
+          </div>
 				</article>
 			</section>
 		</script>

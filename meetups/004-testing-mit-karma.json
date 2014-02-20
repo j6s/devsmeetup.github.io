@@ -1,6 +1,11 @@
 {
   "title": "Testing mit Karma",
-  "date": "18. Oktober 2013",
+  "date": {
+    "day": "18",
+    "month": "okt",
+    "year": "2013",
+    "all": "18. Oktober 2013"
+  },
   "url": "testing-mit-karma",
   "location": {
     "name": "Freiraum",

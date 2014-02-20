@@ -1,6 +1,11 @@
 {
 	"title": "Funktionale Programmierung",
-	"date": "17. Juli 2013",
+  "date": {
+    "day": "17",
+    "month": "jul",
+    "year": "2013",
+    "all": "17. Juli 2013"
+  },
 	"url": "functional-programming",
 	"location": {
 		"name": "Freiraum",

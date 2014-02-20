@@ -701,6 +701,9 @@ a:hover {
   line-height: 2rem;
   font-weight: 700;
 }
+.speaker-date .month {
+  text-transform: uppercase;
+}
 
 .speaker-info {
   position: absolute;

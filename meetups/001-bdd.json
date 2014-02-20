@@ -1,6 +1,11 @@
 {
 	"title": "Behavior Driven Development",
-	"date": "12. Juni 2013",
+  "date": {
+    "day": "12",
+    "month": "jun",
+    "year": "2013",
+    "all": "12. Juni 2013"
+  },
 	"url": "bdd",
 	"location": {
 		"name": "Freiraum",
