@@ -9,17 +9,8 @@
 
 	text-align: center;
 
-	background: #222;
-	color: #fff;
+	background: #fff;
 	text-align: center;
-
-	a {
-		color: lighten($highlight, 20);
-
-		&:visited {
-			color: lighten($highlight, 20);
-		}
-	}
 }
 
 .organizers {
@@ -57,11 +48,26 @@
 	}
 }
 
-.footer-links {
-	@include x-rem(margin, 1 2 0);
-	text-align: right;
 
-	a {
-		@include x-rem(padding, 0 0.5);
-	}
+// Imprint
+.imprint {
+  background: $highlight;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+.imprint-content {
+  @extend %container;
+}
+
+.footer-links {
+  @include x-rem(margin, 1 2 0);
+  text-align: center;
+
+  a {
+    @include x-rem(padding, 0 0.5);
+  }
 }

@@ -21,7 +21,10 @@
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
+
 		<link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico">
 	</head>
 	<body>
 		<!--[if lt IE 8]>
@@ -30,20 +33,17 @@
 
 		<header class="site-header">
 			<div class="header-content">
-				<h1 role="banner"><a href="#/">Developer MeetUp Freiburg</a></h1>
-				<p>Software Engineering und Developer MeetUp in Freiburg</p>
+        <div class="devmup">
+          <h1 class="logo" role="banner"><a href="#/">Developer MeetUp Freiburg</a></h1>
+        </div>
 			</div>
 
 			<div class="site-teaser"></div>
-
-			<div class="coming-up">
-				<p>27. Januar 2014 &mdash; 20 Uhr <!-- &mdash; Funktionale Programmierung --></p>
-			</div>
 		</header>
 
-		<section class="site-content" role="main"></section>
+		<section class="site-content-main" role="main"></section>
 
-		<footer class="site-footer">
+    <footer class="site-footer">
 			<p>Developer MeetUp Freiburg wird organisiert von</p>
 
 			<p class="organizers">
@@ -71,12 +71,16 @@
 					data-show-count="false"
 					data-size="large">Folge @devsmeetup</a>
 			</p>
-
-			<p class="footer-links">
-				<a href="mailto:info@drublic.de?subject=Devs%20Meetup">Kontakt</a>
-				<a href="http://drublic.de/#imprint">Impressum</a>
-			</p>
 		</footer>
+
+    <section class="imprint" id="imprint">
+      <section class="imprint-content">
+        <p class="footer-links">
+          <a href="mailto:info@drublic.de?subject=Devs%20Meetup">Kontakt</a>
+          <a href="http://drublic.de/#imprint">Impressum</a>
+        </p>
+      </section>
+    </section>
 
 		<div id="fb-root"></div>
 
@@ -99,27 +103,36 @@
 		<script id="template-single" type="text/x-handlebars-template">
 			<section class="archive-article" id="archive-article">
 				<article>
-					<header>
-						<h2>{{title}}</h2>
-						<small>{{date}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
-					</header>
+          <div class="speaker-profile">
+            <div class="speaker-date">
+              <span class="date">25</span>
+              <span class="month">FEB</span>
+            </div>
+            <a href="{{speaker.website}}"><img src="{{speaker.image}}" alt="{{speaker.name}}"></a>
 
-					<p>{{abstract.intro}}</p>
+            <div class="speaker-info">
+              <div class="info" id="info-button">i</div>
+              <div class="text">
+                <h3>Christian Schlack</h3>
+                {{{speaker.description}}}
+              </div>
+            </div>
+          </div>
 
-					<p><strong>{{abstract.title}}</strong></p>
+          <header>
+            <h2>{{abstract.title}}</h2>
+            <h3>{{speaker.name}}</h3>
+          </header>
 
-					{{{abstract.text}}}
+          <p>{{{abstract.text}}}</p>
+
+          {{abstract.intro}}
 
 					<p class="btn"><a href="{{lanyrd}}">Event bei Lanyrd</a></p>
 
-					<footer>
-						<div class="speaker" id="speaker">
-							<h3 id="speaker-heading">{{speaker.name}}</h3>
-							<a href="{{speaker.website}}"><img src="{{speaker.image}}" alt="{{speaker.name}}" class=""></a>
-
-							{{{speaker.description}}}
-						</div>
-					</footer>
+          <footer>
+            <small>{{date}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
+          </footer>
 				</article>
 			</section>
 		</script>

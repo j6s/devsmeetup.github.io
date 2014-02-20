@@ -157,7 +157,7 @@
 				content = templates.archive.render(data);
 			}
 
-			Helper.setContent('.site-content', content);
+			Helper.setContent('.site-content-main', content);
 		};
 
 		var _mainHandler = function () {
@@ -168,7 +168,7 @@
 			// Load index content
 			if (action === '' || action === '!') {
 
-				Loader.load(_mainAction, '.site-content', _injectTwitterButton);
+				Loader.load(_mainAction, '.site-content-main', _injectTwitterButton);
 
 				// And load teaser
 				Loader.load('teaser', '.site-teaser');
@@ -180,7 +180,7 @@
 			if (_allowedActions.indexOf(action) > -1) {
 				document.querySelector('.site-teaser').innerHTML = '';
 
-				Loader.load(action, '.site-content');
+				Loader.load(action, '.site-content-main');
 
 				window.scrollTo(0);
 			} else if (action.indexOf('meetup') > -1) {

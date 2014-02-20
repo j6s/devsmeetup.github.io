@@ -3,16 +3,16 @@
  */
 
 .site-header {
-	background: $highlight;
-	text-align: center;
-	color: #fff;
+	background: #fff;
+	color: $mainTextColor;
 
 	.header-content {
 		@extend %container;
+    @include x-rem(padding, 0 2 1);
 	}
 
 	h1 {
-		@include x-rem(font-size, 3);
+		@include x-rem(font-size, 2);
 
 		display: block;
 		line-height: 1;

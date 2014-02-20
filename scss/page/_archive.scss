@@ -3,6 +3,8 @@
  */
 
 .archive {
+  @extend %container;
+
   article {
     @include x-rem(padding, 1);
     @include x-rem(margin-bottom, 2.5);
@@ -47,6 +49,8 @@
  * The archive detail view
  */
 .archive-article {
+  @extend %container;
+
   footer {
     @include x-rem(margin-top, 2.5);
   }
