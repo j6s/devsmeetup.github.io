@@ -19,10 +19,10 @@ textarea {
 }
 
 body {
-	font-size: 1em;
-	line-height: 1.4;
+	font-size: 1.1em;
+	line-height: 1.6;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 /*
@@ -53,6 +53,16 @@ hr {
 	margin: 1em 0;
 	padding: 0;
 }
+
+
+/*
+ * Overwrite default bold styles
+ */
+b,
+strong {
+  font-weight: 400;
+}
+
 
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
@@ -170,7 +180,7 @@ a {
 
 	.teaser-content {
 		@extend %container;
-		@include x-rem(margin, 10 auto 16);
+		@include x-rem(margin, 8 auto 11);
 
 		color: #fff;
 		padding-bottom: 0;
@@ -195,7 +205,6 @@ a {
   background: url(../img/slider-1.jpg) no-repeat top center;
   overflow: hidden;
   color: #fff;
-  font-weight: 200;
 }
 
 
@@ -235,7 +244,7 @@ a {
 
     display: block;
     line-height: 2rem;
-    font-weight: 700;
+    font-weight: 400;
   }
 
   .month {
@@ -255,7 +264,7 @@ a {
     position: relative;
     z-index: 20;
     font-family: Georigia, serif;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     font-size: 1.25rem;
     background: $highlight;
@@ -299,6 +308,15 @@ a {
     &:hover {
       display: block;
     }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -318,11 +336,13 @@ a {
 
 	input[type="email"] {
 		@include x-rem(font-size, 1);
-		@include x-rem(padding, 0.75 5);
+    @include x-rem(padding, 0.9 0.9 0.75);
+    @include x-rem(margin-right, 1);
     @include x-transition(.2s);
 
     background: #fdfdfd;
     border: 1px solid #e1e1e1;
+    width: 20em;
 
     &:focus {
       outline: 0;

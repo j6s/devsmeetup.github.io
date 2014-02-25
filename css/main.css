@@ -514,10 +514,10 @@ textarea {
 }
 
 body {
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: 1.1em;
+  line-height: 1.6;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 /*
@@ -545,6 +545,14 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+}
+
+/*
+ * Overwrite default bold styles
+ */
+b,
+strong {
+  font-weight: 400;
 }
 
 /*
@@ -640,8 +648,8 @@ a:hover {
   color: #222222;
 }
 .site-teaser .teaser-content {
-  margin: 160px auto 256px;
-  margin: 10rem auto 16rem;
+  margin: 128px auto 176px;
+  margin: 8rem auto 11rem;
   color: #fff;
   padding-bottom: 0;
   text-align: left;
@@ -660,7 +668,6 @@ a:hover {
   background: url(../img/slider-1.jpg) no-repeat top center;
   overflow: hidden;
   color: #fff;
-  font-weight: 200;
 }
 
 .speaker-profile {
@@ -699,7 +706,7 @@ a:hover {
   margin: 0.75rem 0 0;
   display: block;
   line-height: 2rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 .speaker-date .month {
   text-transform: uppercase;
@@ -719,7 +726,7 @@ a:hover {
   position: relative;
   z-index: 20;
   font-family: Georigia, serif;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   font-size: 1.25rem;
   background: #2dbbd3;
@@ -760,6 +767,13 @@ a:hover {
 .speaker-info .text:hover {
   display: block;
 }
+.speaker-info .text a {
+  color: #fff;
+  text-decoration: underline;
+}
+.speaker-info .text a:hover {
+  text-decoration: none;
+}
 
 @media screen and (min-width: 60em) {
   .abstract-container {
@@ -774,13 +788,16 @@ a:hover {
 .newsletter input[type="email"] {
   font-size: 16px;
   font-size: 1rem;
-  padding: 12px 80px;
-  padding: 0.75rem 5rem;
+  padding: 14.4px 14.4px 12px;
+  padding: 0.9rem 0.9rem 0.75rem;
+  margin-right: 16px;
+  margin-right: 1rem;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
   background: #fdfdfd;
   border: 1px solid #e1e1e1;
+  width: 20em;
 }
 .newsletter input[type="email"]:focus {
   outline: 0;
@@ -1036,9 +1053,13 @@ a:hover {
 .footer-links {
   margin: 16px 32px 0;
   margin: 1rem 2rem 0;
+  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
 }
 .footer-links a {
   padding: 0 8px;
   padding: 0 0.5rem;
+  text-decoration: none;
+  font-weight: 400;
 }
