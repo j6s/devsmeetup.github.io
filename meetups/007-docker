@@ -16,10 +16,8 @@
   "abstract": {
     "title": "Das Lazy-Developers-Toolkit",
     "intro": "",
-    "text": "<p>Die Hype-Maschine dröhnt:
-            "Mit Docker brauchst Du keine Devops-Tools wie Chef oder Ansible mehr! Traditionelle Virtualisierungslösungen kannst Du auch gleich wegwerfen! Und alles wird viel einfacher!"</p>
-            <p>Was ist da dran?</p>
-            <p>Der Talk bietet einen realistischen Blick auf Docker. Immer mit Entwicklerfokus: Wie kann ich mir damit mein Deployment und Testing erleichtern? Beispiele aus einem realen Projekt.</p>",
+    "text": "<p>Die Hype-Maschine dröhnt: Mit Docker brauchst Du keine Devops-Tools wie Chef oder Ansible mehr! Traditionelle Virtualisierungslösungen kannst Du auch gleich wegwerfen! Und alles wird viel einfacher!</p>
+    <p>Was ist da dran?</p> <p>Der Talk bietet einen realistischen Blick auf Docker. Immer mit Entwicklerfokus: Wie kann ich mir damit mein Deployment und Testing erleichtern? Beispiele aus einem realen Projekt.</p>",
     "short": "Mit Docker brauchst Du keine Devops-Tools wie Chef oder Ansible mehr! Traditionelle Virtualisierungslösungen kannst Du auch gleich wegwerfen! Und alles wird viel einfacher!"
   },
 
@@ -27,7 +25,6 @@
     "name": "Jonas Reinsch",
     "website": "https://twitter.com/jsrnio",
     "image": "img/jreinsch.jpg",
-    "description": "<p>Seine Brötchen verdient er mit nativer iOS-Entwicklung, also Objective-C und Cococa Touch.</p>
-                   <p>Manche App benötigt auch ein Backend - die perfekte Entschuldigung für Jonas, was Neues zu lernen und einzusetzen: Docker!</p>"
+    "description": "<p>Seine Brötchen verdient er mit nativer iOS-Entwicklung, also Objective-C und Cococa Touch.</p> <p>Manche App benötigt auch ein Backend - die perfekte Entschuldigung für Jonas, was Neues zu lernen und einzusetzen: Docker!</p>"
   }
 }
