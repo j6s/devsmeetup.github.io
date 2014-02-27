@@ -591,8 +591,8 @@ textarea {
 h2 {
   font-size: 32px;
   font-size: 2rem;
-  margin: 16px 0;
-  margin: 1rem 0;
+  margin: 0 0 16px;
+  margin: 0 0 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
 }
@@ -635,9 +635,9 @@ a:hover {
   text-align: center;
 }
 
-.site-content, .site-teaser .teaser-content, .archive, .archive-article, .site-header .header-content, .imprint-content {
-  padding: 32px 32px 48px;
-  padding: 2rem 2rem 3rem;
+.site-content, .site-teaser .teaser-content, .archive, .archive-article, .site-header .header-content {
+  padding: 96px 32px;
+  padding: 6rem 2rem;
   max-width: 40em;
   margin: 0 auto;
 }
@@ -648,8 +648,8 @@ a:hover {
   color: #222222;
 }
 .site-teaser .teaser-content {
-  margin: 128px auto 176px;
-  margin: 8rem auto 11rem;
+  margin: 64px auto 176px;
+  margin: 4rem auto 11rem;
   color: #fff;
   padding-bottom: 0;
   text-align: left;
@@ -994,8 +994,8 @@ a:hover {
 .site-footer {
   margin-top: 48px;
   margin-top: 3rem;
-  padding: 32px 0;
-  padding: 2rem 0;
+  padding: 96px 0;
+  padding: 6rem 0;
   font-size: 14px;
   font-size: 0.875rem;
   text-align: center;
@@ -1048,6 +1048,13 @@ a:hover {
 }
 .imprint a {
   color: #fff;
+}
+
+.imprint-content {
+  padding: 32px 32px 48px;
+  padding: 2rem 2rem 3rem;
+  max-width: 40em;
+  margin: 0 auto;
 }
 
 .footer-links {
