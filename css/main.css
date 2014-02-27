@@ -510,7 +510,7 @@ button,
 input,
 select,
 textarea {
-  color: #222222;
+  color: #1a1f28;
 }
 
 body {
@@ -645,7 +645,7 @@ a:hover {
 .site-teaser {
   background: url(../img/slider.jpg) no-repeat top center;
   overflow: hidden;
-  color: #222222;
+  color: #1a1f28;
 }
 .site-teaser .teaser-content {
   margin: 64px auto 176px;
@@ -913,7 +913,7 @@ a:hover {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  color: #222222;
+  color: #1a1f28;
   text-decoration: none;
 }
 .archive h2 a:hover {
@@ -943,7 +943,7 @@ a:hover {
  */
 .site-header {
   background: #fff;
-  color: #222222;
+  color: #1a1f28;
 }
 .site-header .header-content {
   padding: 0 32px 16px;
