@@ -384,8 +384,10 @@ a {
 }
 
 @media screen and (min-width: 60em) {
-  input[type="email"] {
-    width: 20em;
+  .newsletter {
+    input[type="email"] {
+      width: 20em;
+    }
   }
 }
 

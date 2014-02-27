@@ -830,7 +830,7 @@ a:hover {
 }
 
 @media screen and (min-width: 60em) {
-  input[type="email"] {
+  .newsletter input[type="email"] {
     width: 20em;
   }
 }
