@@ -4,12 +4,19 @@
 
 .site-footer {
 	@include x-rem(margin-top, 3);
-	@include x-rem(padding, 6 0);
+	@include x-rem(padding, 2 0);
 
 	text-align: center;
 
 	background: #fff;
 	text-align: center;
+}
+
+
+@media screen and (min-width: 30em) {
+  .site-footer {
+    @include x-rem(padding, 6 2);
+  }
 }
 
 .organizers {

@@ -161,7 +161,7 @@ a {
 
 // Content
 %container {
-	@include x-rem(padding, 6 2);
+	@include x-rem(padding, 2);
 
 	max-width: 40em;
 	margin: 0 auto;
@@ -169,6 +169,12 @@ a {
 
 .site-content {
   @extend %container;
+}
+
+@media screen and (min-width: 30em) {
+  %container {
+    @include x-rem(padding, 6 2);
+  }
 }
 
 
@@ -179,11 +185,9 @@ a {
 	color: $mainTextColor;
 
 	.teaser-content {
-		@extend %container;
-		@include x-rem(margin, 4 auto 11);
+    @extend %container;
 
 		color: #fff;
-		padding-bottom: 0;
 		text-align: left;
     font-weight: 100;
 	}
@@ -202,9 +206,15 @@ a {
 
 // Meetup info
 .slider-meetup {
-  background: url(../img/slider-1.jpg) no-repeat top center;
+  background: url(../img/slider-1.jpg) repeat top center;
   overflow: hidden;
   color: #fff;
+}
+
+@media screen and (min-width: 30em) {
+  .slider-meetup {
+    background-repeat: no-repeat;
+  }
 }
 
 
@@ -253,74 +263,79 @@ a {
 }
 
 .speaker-info {
-  position: absolute;
-  bottom: -170px;
-  right: 20px;
-
-  .info {
-    @include x-border-radius(50%);
-    @include x-transition(.2s);
-
-    position: relative;
-    z-index: 20;
-    font-family: Georigia, serif;
-    font-weight: 400;
-    text-align: center;
-    font-size: 1.25rem;
-    background: $highlight;
-    color: #fff;
-    width: 30px;
-    height: 30px;
-    border: 5px solid #fff;
-
-    &:hover {
-      cursor: pointer;
-      background: darken($highlight, 10);
-    }
-
-    &:hover ~ .text {
-      display: block;
-    }
-  }
-
-  .text {
-    @include x-rem(padding, 0.75);
-    @include x-transition(.2s);
-
-    position: absolute;
-    top: 24px;
-    left: 16px;
-    width: 30em;
-    z-index: 10;
-    display: none;
-    background: $highlight;
-    color: #fff;
-
-    h3 {
-      font-weight: 100;
-      margin-top: 0;
-    }
-
-    p {
-      margin-bottom: 0;
-    }
-
-    &:hover {
-      display: block;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
+  display: none;
 }
 
 @media screen and (min-width: 60em) {
+  .speaker-info {
+    position: absolute;
+    bottom: -170px;
+    right: 20px;
+    display: block;
+
+    .info {
+      @include x-border-radius(50%);
+      @include x-transition(.2s);
+
+      position: relative;
+      z-index: 20;
+      font-family: Georigia, serif;
+      font-weight: 400;
+      text-align: center;
+      font-size: 1.25rem;
+      background: $highlight;
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      border: 5px solid #fff;
+
+      &:hover {
+        cursor: pointer;
+        background: darken($highlight, 10);
+      }
+
+      &:hover ~ .text {
+        display: block;
+      }
+    }
+
+    .text {
+      @include x-rem(padding, 0.75);
+      @include x-transition(.2s);
+
+      position: absolute;
+      top: 24px;
+      left: 16px;
+      width: 30em;
+      z-index: 10;
+      display: none;
+      background: $highlight;
+      color: #fff;
+
+      h3 {
+        font-weight: 100;
+        margin-top: 0;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        display: block;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
   .abstract-container {
     width: 26em;
     float: right;
@@ -342,7 +357,7 @@ a {
 
     background: #fdfdfd;
     border: 1px solid #e1e1e1;
-    width: 20em;
+    width: 13em;
 
     &:focus {
       outline: 0;
@@ -365,6 +380,12 @@ a {
 
   .blue {
     color: $highlight;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  input[type="email"] {
+    width: 20em;
   }
 }
 
@@ -412,11 +433,24 @@ a {
 		@include x-box-sizing;
 		@include x-rem(padding, 1);
 
-		display: inline;
-		float: left;
-		max-width: 50%;
+		display: block;
 	}
 }
+
+@media screen and (min-width: 40em) {
+  .sponsors {
+    li {
+      display: inline;
+      float: left;
+      max-width: 50%;
+    }
+  }
+
+  .gh .logo {
+    background-size: auto 100%;
+  }
+}
+
 
 
 // SVG logos
@@ -431,12 +465,14 @@ a {
 
 .gh .logo {
   background: url(../img/gh.svg) no-repeat;
-  background-size: auto 100%;
+  background-size: auto 90%;
 }
+
 .ndh .logo {
   background: url(../img/ndh.png) no-repeat;
   background-size: auto 100%;
 }
+
 .devmup .logo {
   background: url(../img/logo.svg) no-repeat;
   background-size: auto 100%;
