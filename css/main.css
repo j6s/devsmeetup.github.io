@@ -996,8 +996,6 @@ a:hover {
   margin-top: 3rem;
   padding: 96px 0;
   padding: 6rem 0;
-  font-size: 14px;
-  font-size: 0.875rem;
   text-align: center;
   background: #fff;
   text-align: center;
@@ -1008,6 +1006,8 @@ a:hover {
   padding: 1.5rem 0;
   width: 192px;
   width: 12rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
