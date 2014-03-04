@@ -1,17 +1,17 @@
 {
   "title": "Docker - Das Beste seit geschnitten Brot?",
   "date": {
-    "day": "27",
-    "month": "jan",
+    "day": "26",
+    "month": "mrz",
     "year": "2014",
-    "all": "27. Januar 2014"
+    "all": "26. März 2014"
   },
   "url": "docker",
   "location": {
     "name": "Freiraum",
     "url": "http://freiraumfreiburg.de/"
   },
-  "lanyrd": "http://lanyrd.com/cwkzc",
+  "lanyrd": "http://lanyrd.com/cxrpf",
 
   "abstract": {
     "title": "Das Lazy-Developers-Toolkit",
