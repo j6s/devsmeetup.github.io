@@ -885,7 +885,8 @@ a:hover {
     max-width: 50%;
   }
 
-  .gh .logo {
+  .gh .logo,
+  .codio .logo {
     background-size: auto 100%;
   }
 }
@@ -901,6 +902,11 @@ a:hover {
 .gh .logo {
   background: url(../img/gh.svg) no-repeat;
   background-size: auto 90%;
+}
+
+.codio .logo {
+  background: url(../img/codio.svg) no-repeat;
+  background-size: auto 100%;
 }
 
 .ndh .logo {
