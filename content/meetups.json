@@ -144,33 +144,32 @@
   }
 }
 ,{
-  "title": "Docker - Das Beste seit geschnitten Brot?",
+  "title": "Lightning Talks #1",
   "date": {
-    "day": "26",
-    "month": "mrz",
+    "day": "28",
+    "month": "apr",
     "year": "2014",
-    "all": "26. März 2014"
+    "all": "28. April 2014"
   },
-  "url": "docker",
+  "url": "lt1",
   "location": {
-    "name": "Freiraum",
-    "url": "http://freiraumfreiburg.de/"
+    "name": "Gebrueder Heitz",
+    "url": "http://www.gebruederheitz.de/"
   },
-  "lanyrd": "http://lanyrd.com/cxrpf",
+  "lanyrd": "http://lanyrd.com/cymbr",
 
   "abstract": {
-    "title": "Das Lazy-Developers-Toolkit",
+    "title": "Lightning Talks #1",
     "intro": "",
-    "text": "<p>Die Hype-Maschine dröhnt: Mit Docker brauchst Du keine Devops-Tools wie Chef oder Ansible mehr! Traditionelle Virtualisierungslösungen kannst Du auch gleich wegwerfen! Und alles wird viel einfacher!</p> <p>Was ist da dran?</p><p>Der Talk bietet einen realistischen Blick auf Docker. Immer mit Entwicklerfokus: Wie kann ich mir damit mein Deployment und Testing erleichtern? Beispiele aus einem realen Projekt.</p>",
-    "short": "Mit Docker brauchst Du keine Devops-Tools wie Chef oder Ansible mehr! Traditionelle Virtualisierungslösungen kannst Du auch gleich wegwerfen! Und alles wird viel einfacher!"
+    "text": "<p>Dieses Mal werden wir etwas neues versuchen: Lightning Talks! Es wird spannende Talks über Git und Bug-Reports von Nicki Uhlbach, Jonas Faigle und Steffen Müller geben! Ja, Bug-Reports sind spannend.</p>",
+    "short": "Why, this car could be systematic, hydromatic, ultramatic. Why, it could be greased lightning, grease lightning!"
   },
 
   "speaker": {
-    "name": "Jonas Reinsch",
-    "website": "https://twitter.com/jsrnio",
-    "image": "img/jreinsch.jpg",
-    "description": "<p>Seine Brötchen verdient er mit nativer iOS-Entwicklung, also Objective-C und Cococa Touch.</p><p>Manche App benötigt auch ein Backend - die perfekte Entschuldigung für Jonas, was Neues zu lernen und einzusetzen: Docker!</p>"
+    "name": "Devsmeetup",
+    "website": "https://twitter.com/devsmeetup",
+    "image": "img/lightning_talks.jpg",
+    "description": ""
   }
 }
-
 ]
