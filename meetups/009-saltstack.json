@@ -1,0 +1,29 @@
+{
+  "title": "Be Gru: Master of your Minions – Saltstack",
+  "date": {
+    "day": "28",
+    "month": "mai",
+    "year": "2014",
+    "all": "28. Mai 2014"
+  },
+  "url": "lt1",
+  "location": {
+    "name": "Gebrueder Heitz",
+    "url": "http://www.gebruederheitz.de/"
+  },
+  "lanyrd": "http://lanyrd.com/2014/developer-meetup-freiburg-9/",
+
+  "abstract": {
+    "title": "Be Gru: Master of your Minions – Saltstack",
+    "intro": "",
+    "text": "<p>Sei dein Herr über die Maschinen und nicht der Sklave. Egal ob Deployment, Sicherheitsupdates oder eine Testmaschine. Ich erkläre euch hier wie sich mit Saltstack die Wünsche eines jeden Entwicklers auch auf den Servern wiederspiegeln.</p><p>Dazu gehört eine kleine Einführung in die Thematik warum das denn der heiße Scheiß ist und man das unbedingt haben will. Auch wie anhand von verschiedenen Deploymentgrößen vom lokalen Laptop, über projektbasiertem Deployment bis zum eigenen Rack die Konzepte abgebildet werden können.</p>",
+    "short": "Sei dein Herr über die Maschinen und nicht der Sklave. Egal ob Deployment, Sicherheitsupdates oder eine Testmaschine."
+  },
+
+  "speaker": {
+    "name": "Tobias Paepke",
+    "website": "http://www.twitter.com/paepke_net/ ",
+    "image": "img/tpaepke.jpg",
+    "description": "Senior Frontend Developer bei solute GmbH in Karlsruhe | Python Fanboy | Eigenes Hosting | Linuxtag Core-Mitglied | Schwarzwälder seit Geburt | Bahn-Pendler"
+  }
+}
