@@ -230,4 +230,33 @@
     "description": "JavaScript und NoSQL Enthusiast. In seiner Freizeit organisiert er cologne.js die JavaScript User Group in Köln. Master of Science Abschluss der RWTH Aachen in Informatik. Im Beruf wirkt er als Kernentwickler der ArangoDB mit und ist dort vor allem zuständig für das Web Interface und Graphen-funktionalität. Michael ist regelmäßiger Sprecher auf diversen User Groups in ganz Deutschland."
   }
 }
+,{
+  "title": "Lightning Talks #2",
+  "date": {
+    "day": "30",
+    "month": "jul",
+    "year": "2014",
+    "all": "30. Juli 2014"
+  },
+  "url": "lt1",
+  "location": {
+    "name": "Grünhof",
+    "url": "http://www.gruenhof.org/"
+  },
+  "lanyrd": "http://lanyrd.com/ccbkzb",
+
+  "abstract": {
+    "title": "Lightning Talks #2",
+    "intro": "",
+    "text": "<p>Auf ein neues mit kurzen Tags zu spannenden Themen!</p>",
+    "short": "Why, this car could be systematic, hydromatic, ultramatic. Why, it could be greased lightning, grease lightning!"
+  },
+
+  "speaker": {
+    "name": "Devsmeetup",
+    "website": "https://twitter.com/devsmeetup",
+    "image": "img/lightning_talks.jpg",
+    "description": ""
+  }
+}
 ]
