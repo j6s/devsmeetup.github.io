@@ -1,153 +1,23 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
+---
+layout: default
+---
 
-		<title>Developer MeetUp Freiburg</title>
+<div class="home">
 
-		<meta name="referrer" content="always">
-		<meta name="keywords" content="Developer, Meetup, Freiburg, Entwicklung">
-		<meta name="description" content="Developer MeetUp ist ein Software Engineering und Developer MeetUp in Freiburg">
+  <h1 class="page-heading">Posts</h1>
 
-		<meta property="og:site_name" content="Developer MeetUp Freiburg">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="http://devsmeetup.de">
-		<meta property="og:title" content="Developer MeetUp">
-		<meta property="og:description" content="Developer MeetUp ist ein Software Engineering und Developer MeetUp in Freiburg">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-		<meta name="viewport" content="width=device-width">
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-		<!--[if lt IE 9]>
-			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="favicon.ico">
-	</head>
-	<body>
-		<!--[if lt IE 8]>
-			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-
-		<header class="site-header">
-			<div class="header-content">
-        <div class="devmup">
-          <h1 class="logo" role="banner"><a href="#/">Developer MeetUp Freiburg</a></h1>
-        </div>
-			</div>
-
-			<div class="site-teaser"></div>
-		</header>
-
-		<section class="site-content-main" role="main"></section>
-
-    <footer class="site-footer">
-			<p>Developer MeetUp Freiburg wird organisiert von</p>
-
-			<p class="organizers">
-				<a href="http://www.ndh-websolutions.de/">
-					<img src="img/t3ndh.jpg" title="">
-					Nico de Haen
-				</a>
-
-        <a href="http://www.nimius.net/">
-          <img src="img/nimius_design.jpg" title="">
-          Nicki Uhlbach
-        </a>
-
-				<a href="https://twitter.com/sebastiansebald">
-					<img src="img/ssebald.jpg" title="">
-					Sebastian Sebald
-				</a>
-			</p>
-
-			<p>Folge uns auf Twitter</p>
-
-			<p>
-				<a href="https://twitter.com/devsmeetup"
-					class="twitter-follow-button"
-					data-show-count="false"
-					data-size="large">Folge @devsmeetup</a>
-			</p>
-		</footer>
-
-    <section class="imprint" id="imprint">
-      <section class="imprint-content">
-        <p class="footer-links">
-          Designed with ♥&nbsp;&nbsp;&nbsp;&nbsp;|
-          <a href="mailto:info@drublic.de?subject=Devs%20Meetup">Kontakt</a> |
-          <a href="http://drublic.de/#imprint">Impressum</a>
-        </p>
-      </section>
-    </section>
-
-		<div id="fb-root"></div>
-
-		<script id="template-archive" type="text/x-handlebars-template">
-			<section class="archive" id="meetups">
-				{{#meetups}}
-					<article>
-						<header>
-							<h2><a href="#/meetup/{{url}}">{{title}}</a></h2>
-							<small>{{date.all}} &mdash; <a href="{{location.url}}">{{location.name}}</a></small>
-						</header>
-						<p>{{abstract.short}}</p>
-					</article>
-				{{/meetups}}
-
-				<p class="btn"><a href="#">Zurück</a></p>
-			</section>
-		</script>
-
-		<script id="template-single" type="text/x-handlebars-template">
-			<section class="archive-article clearfix" id="archive-article">
-				<article>
-          <div class="speaker-profile">
-            <div class="speaker-date">
-              <span class="date">{{date.day}}</span>
-              <span class="month">{{date.month}}</span>
-            </div>
-            <a href="{{speaker.website}}"><img src="{{speaker.image}}" alt="{{speaker.name}}"></a>
-
-            <div class="speaker-info">
-              <div class="info" id="info-button">i</div>
-              <div class="text">
-                <h3>{{speaker.name}}</h3>
-                {{{speaker.description}}}
-              </div>
-            </div>
-          </div>
-
-          <div class="abstract-container">
-            <header>
-              <h2>{{abstract.title}}</h2>
-              <h3>{{speaker.name}}</h3>
-            </header>
-
-            {{{abstract.text}}}
-
-            {{abstract.intro}}
-
-  					<p class="btn"><a href="{{lanyrd}}">Event bei Lanyrd</a></p>
-          </div>
-				</article>
-			</section>
-		</script>
-
-		<script src="js/vendor/hogan-3.0.0.js"></script>
-    <script src="js/main.js"></script>
-
-
-		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-		<script>
-			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-			e.src='//www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-			ga('create','UA-41415411-1');ga('send','pageview');
-		</script>
-	</body>
-</html>
+</div>

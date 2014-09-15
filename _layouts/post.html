@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="site-teaser">
+  <div class="teaser-content clearfix">
+    <div class="speaker-profile">
+      <div class="speaker-date">
+        <span class="date">{{ page.date | date: '%d'}}</span>
+        <span class="month">{{ page.date | date: '%b'}}</span>
+      </div>
+      <a href="{{page.speaker.website}}"><img src="/assets/img/{{page.speaker.image}}" alt="{{page.speaker.name}}"></a>
+
+      {% if page.speaker.description%}
+      <div class="speaker-info">
+        <div class="info" id="info-button">i</div>
+        <div class="text">
+          <h3>{{page.speaker.name}}</h3>
+          {{page.speaker.description}}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="abstract-container">
+      <header>
+        <h2>{{ page.title}}</h2>
+        <h3>von {{ page.speaker.name}}</h3>
+      </header>
+
+      {{ content }}
+
+      <p class="btn">
+        <a href="{{ page.lanyrd}}">
+          Mehr Infos und Anmeldung über Lanyard
+        </a>
+      </p>
+    </div>
+  </div>
+</div>

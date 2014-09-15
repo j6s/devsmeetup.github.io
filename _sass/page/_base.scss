@@ -180,7 +180,7 @@ a {
 
 // Teaser
 .site-teaser {
-	background: url(../img/slider.jpg) no-repeat top center;
+	background: url(/assets/img/slider.jpg) no-repeat top center;
 	overflow: hidden;
 	color: $mainTextColor;
 
@@ -206,7 +206,7 @@ a {
 
 // Meetup info
 .slider-meetup {
-  background: url(../img/slider-1.jpg) repeat top center;
+  background: url(/assets/img/slider-1.jpg) repeat top center;
   overflow: hidden;
   color: #fff;
 }
@@ -394,7 +394,7 @@ a {
 
 // When and where
 .slider-when {
-  background: url(../img/slider-2.jpg) no-repeat top center;
+  background: url(/assets/img/slider-2.jpg) no-repeat top center;
   overflow: hidden;
   color: #fff;
 }
@@ -468,27 +468,27 @@ a {
 }
 
 .gh .logo {
-  background: url(../img/gh.svg) no-repeat;
+  background: url(/assets/img/gh.svg) no-repeat;
   background-size: auto 90%;
 }
 
 .codio .logo {
-  background: url(../img/codio.svg) no-repeat;
+  background: url(/assets/img/codio.svg) no-repeat;
   background-size: auto 100%;
 }
 
 .continum .logo {
-  background: url(../img/continum.jpg) no-repeat;
+  background: url(/assets/img/continum.jpg) no-repeat;
   background-size: auto 100%;
 }
 
 .ndh .logo {
-  background: url(../img/ndh.png) no-repeat;
+  background: url(/assets/img/ndh.png) no-repeat;
   background-size: auto 100%;
 }
 
 .devmup .logo {
-  background: url(../img/logo.svg) no-repeat;
+  background: url(/assets/img/logo.svg) no-repeat;
   background-size: auto 100%;
   text-indent: -999px;
   width: 150px;
