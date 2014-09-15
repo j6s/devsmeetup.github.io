@@ -9,8 +9,11 @@ short: >
   Dezentralisierung und hat eigene Treffen organisiert um neue Tools zu entwickeln.
 speaker:
   name: "Holger Krekel"
-  website: https://twitter.com/hpk42"
+  url: https://twitter.com/hpk42"
   image: "holger.jpg"
+location:
+  name: "Grünhof"
+  url: "http://www.gruenhof.org"
 ---
 
 
