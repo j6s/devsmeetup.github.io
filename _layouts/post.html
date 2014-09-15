@@ -28,13 +28,24 @@ layout: default
         <h3>von {{ page.speaker.name}}</h3>
       </header>
 
-      {{ content }}
+      {{ page.short }}
 
-      <p class="btn">
-        <a href="{{ page.lanyrd}}">
-          Mehr Infos und Anmeldung über Lanyard
-        </a>
-      </p>
     </div>
   </div>
 </div>
+
+<section class="site-content">
+  <section class="toc clearfix" id="toc">
+
+    <div class="abstract-container">
+      <h2>Programm</h2>
+
+      <h3>{{ page.title }}</h3>
+      <h4>von {{ page.speaker.name }}</h4>
+
+      {{content}}
+
+      <p class="btn"><a href="{{ page.lanyard }}">Mehr Infos &amp; Anmeldung über Lanyrd</a></p>
+    </div>
+  </section>
+</section>

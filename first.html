@@ -1,0 +1,31 @@
+<div class="site-teaser">
+  <div class="teaser-content clearfix">
+    <div class="speaker-profile">
+      <div class="speaker-date">
+        <span class="date">{{ site.posts.first.date | date: '%d'}}</span>
+        <span class="month">{{ site.posts.first.date | date: '%b'}}</span>
+      </div>
+      <a href="{{site.posts.first.speaker.website}}"><img src="/assets/img/{{site.posts.first.speaker.image}}" alt="{{site.posts.first.speaker.name}}"></a>
+
+      {% if site.posts.first.speaker.description%}
+      <div class="speaker-info">
+        <div class="info" id="info-button">i</div>
+        <div class="text">
+          <h3>{{site.posts.first.speaker.name}}</h3>
+          {{site.posts.first.speaker.description}}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="abstract-container">
+      <header>
+        <h2>{{ site.posts.first.title}}</h2>
+        <h3>von {{ site.posts.first.speaker.name}}</h3>
+      </header>
+
+      {{ site.posts.first.short }}
+
+    </div>
+  </div>
+</div>

@@ -2,30 +2,9 @@
 layout: default
 ---
 
-<section id="meetups" class="archive">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <article>
-        <header>
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-              {{ post.title }}
+{% include first.html %}
 
-            </a>
-          </h2>
-          <small>
-            {{ post.date | date: "%-d. %B %Y" }}
-            -
-            <a href="{{ post.location.url }}">{{ post.location.name }}</a>
-          </small>
-        </header>
-        <p>
-          {{ post.short }}
-        </p>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+{% include newsletter.html %}
 
 {% include when.html %}
 
