@@ -3,7 +3,6 @@ layout: default
 ---
 
 <section id="meetups" class="archive">
-  <ul class="post-list">
     {% for post in site.posts %}
       <article>
         <header>
@@ -22,7 +21,6 @@ layout: default
         <p>
           {{ post.short }}
         </p>
-      </li>
+      </article>
     {% endfor %}
-  </ul>
 </section>

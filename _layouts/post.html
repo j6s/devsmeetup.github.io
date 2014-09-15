@@ -9,7 +9,7 @@ layout: default
         <span class="date">{{ page.date | date: '%d'}}</span>
         <span class="month">{{ page.date | date: '%b'}}</span>
       </div>
-      <a href="{{page.speaker.website}}"><img src="/assets/img/{{page.speaker.image}}" alt="{{page.speaker.name}}"></a>
+      <a href="{{page.speaker.website}}"><img src="/assets/{{page.speaker.image}}" alt="{{page.speaker.name}}"></a>
 
       {% if page.speaker.description%}
       <div class="speaker-info">

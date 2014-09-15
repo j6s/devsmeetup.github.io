@@ -5,7 +5,7 @@
         <span class="date">{{ site.posts.first.date | date: '%d'}}</span>
         <span class="month">{{ site.posts.first.date | date: '%b'}}</span>
       </div>
-      <a href="{{site.posts.first.speaker.website}}"><img src="/assets/img/{{site.posts.first.speaker.image}}" alt="{{site.posts.first.speaker.name}}"></a>
+      <a href="{{site.posts.first.speaker.website}}"><img src="/assets/{{site.posts.first.speaker.image}}" alt="{{site.posts.first.speaker.name}}"></a>
 
       {% if site.posts.first.speaker.description%}
       <div class="speaker-info">
