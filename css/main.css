@@ -886,6 +886,7 @@ a:hover {
   }
 
   .gh .logo,
+  .continum .logo,
   .codio .logo {
     background-size: auto 100%;
   }
@@ -906,6 +907,11 @@ a:hover {
 
 .codio .logo {
   background: url(../img/codio.svg) no-repeat;
+  background-size: auto 100%;
+}
+
+.continum .logo {
+  background: url(../img/continum.jpg) no-repeat;
   background-size: auto 100%;
 }
 
