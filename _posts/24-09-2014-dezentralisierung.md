@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Das verflixte Problem der Dezentralisierung"
+title:  Das verflixte Problem der Dezentralisierung
 date:   2014-09-24 18:00:00
-lanyard: "http://lanyrd.com/cccwwz"
+lanyard: http://lanyrd.com/cccwwz
 short: >
   Holger hat auf der EuroPython Mitte 2013 eine Keynote zum Thema "The Return of
   P2P computing" gehalten und war seitdem auf mehreren Treffen zum Thema
   Dezentralisierung und hat eigene Treffen organisiert um neue Tools zu entwickeln.
 speaker:
-  name: "Holger Krekel"
-  url: https://twitter.com/hpk42"
-  image: "holger.jpg"
+  name: Holger Krekel
+  url: https://twitter.com/hpk42
+  image: img/holger.jpg
 location:
-  name: "Grünhof"
-  url: "http://www.gruenhof.org"
+  name: Grünhof
+  url: http://www.gruenhof.org
 ---
 
 
