@@ -1,0 +1,36 @@
+
+
+// Sponsors
+.sponsors {
+  ul {
+    @include x-rem(margin, 0 -1);
+
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+
+  }
+
+  li {
+    @include x-box-sizing;
+    @include x-rem(padding, 1);
+
+    display: block;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .sponsors {
+    li {
+      display: inline;
+      float: left;
+      max-width: 50%;
+    }
+  }
+
+  .gh .logo,
+  .continum .logo,
+  .codio .logo {
+    background-size: auto 100%;
+  }
+}

@@ -20,5 +20,6 @@
     "commit": "891b0d894b9436fba2f42f4bd637c8f8e377db52"
   },
   "_source": "git://github.com/drublic/Sass-Mixins.git",
-  "_target": "~0.2.2"
+  "_target": "~0.2.2",
+  "_originalSource": "sass-mixins"
 }

@@ -1,0 +1,38 @@
+// SVG logos
+.logo {
+  @include x-rem(margin-bottom, 1);
+
+  display: block;
+  height: 60px;
+  text-indent: -333px;
+  overflow: hidden;
+}
+
+.gh .logo {
+  background: url(/assets/img/gh.svg) no-repeat;
+  background-size: auto 90%;
+}
+
+.codio .logo {
+  background: url(/assets/img/codio.svg) no-repeat;
+  background-size: auto 100%;
+}
+
+.continum .logo {
+  background: url(/assets/img/continum.jpg) no-repeat;
+  background-size: auto 100%;
+}
+
+.ndh .logo {
+  background: url(/assets/img/ndh.png) no-repeat;
+  background-size: auto 100%;
+}
+
+.devmup .logo {
+  background: url(/assets/img/logo.svg) no-repeat;
+  background-size: auto 100%;
+  text-indent: -999px;
+  width: 150px;
+  height: 140px;
+  margin: 1rem auto;
+}

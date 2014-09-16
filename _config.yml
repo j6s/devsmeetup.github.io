@@ -1,0 +1,13 @@
+# Site settings
+title: Developer MeetUp Freiburg
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Developer MeetUp ist ein Software Engineering und Developer MeetUp in
+  Freiburg.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://devsmeetup.de" # the base hostname & protocol for your site
+twitter_username: devsmeetup
+github_username:  devsmeetup
+
+# Build settings
+markdown: kramdown
