@@ -1,6 +1,7 @@
 # Site settings
 title: Developer MeetUp Freiburg
-email: your-email@domain.com
+contact: Sebastian Sebald
+email: devsmeetup@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Developer MeetUp ist ein Software Engineering und Developer MeetUp in
   Freiburg.
