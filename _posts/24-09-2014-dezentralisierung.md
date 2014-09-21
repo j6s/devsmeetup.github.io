@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Das verflixte Problem der Dezentralisierung
-date:   2014-09-24 18:00:00
+date:   2014-09-24 20:00:00
 lanyard: http://lanyrd.com/cccwwz
 short: >
   Holger hat auf der EuroPython Mitte 2013 eine Keynote zum Thema "The Return of
