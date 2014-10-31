@@ -2,8 +2,8 @@
   <div class="teaser-content clearfix">
     <div class="speaker-profile">
       <div class="speaker-date">
-        <span class="date">{{ site.posts.first.date | date: '%d'}}</span>
-        <span class="month">{{ site.posts.first.date | date: '%b'}}</span>
+        <span class="date">{{ site.posts.first.date | date: '%d %b'}}</span>
+        <span class="time">{{ site.posts.first.date | date: '%H:%M'}}</span>
       </div>
       <a href="{{site.posts.first.speaker.website}}"><img src="/assets/{{site.posts.first.speaker.image}}" alt="{{site.posts.first.speaker.name}}"></a>
 
