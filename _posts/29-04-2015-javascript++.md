@@ -16,7 +16,7 @@ location:
 
 Ob ES6, ES Next, ES7 oder ES2015, der EcmaScript Standard, so der offizielle Name von
 Javascript wird ständig weiter entwickelt. Der aktuelle ES6 Draft ist derzeit als [RC3]
-verfügbar und wird bereits implementiert in allen modernen Browser. Somit ist es an
+verfügbar und wird bereits in allen modernen Browser implementiert. Somit ist es an
 der Zeit sich anzuschauen was uns diese Sprachentwicklungen bringen.
 
 [RC3]: https://people.mozilla.org/~jorendorff/es6-draft.html
