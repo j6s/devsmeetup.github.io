@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript++
-date: 29-04-2015 18:00:00
+date: 29-04-2015 20:00:00
 lanyard: http://lanyrd.com/cfkpkx
 short: "JavaScript is evolving, try and keep up"
 speaker:
