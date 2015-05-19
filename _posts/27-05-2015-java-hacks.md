@@ -7,7 +7,7 @@ short: "Die besten Hacks aus 15 Jahren Knuddels-Geschichte"
 speaker:
   name: Sebastian Mischke
   url: 
-  image: img/smischke.jpg
+  image: img/smischke.jpeg
   description: "Nach dem Informatik-Studium in Freiburg startete Sebastian 2008 als Entwickler für den Knuddels-Chat. Dort war er am Aufbau der Firma von 10 auf 30 Leute beteiligt, und arbeitet täglich daran, dass Knuddels sich weiterhin gegen Facebook & Co. behauptet."
 location:
   name: Grünhof
