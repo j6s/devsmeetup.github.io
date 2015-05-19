@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript-Hacks!
+title: Java-Hacks!
 date: 27-05-2015 20:00:00
 lanyard: lanyrd.com/cfmhpr
 short: "Die besten Hacks aus 15 Jahren Knuddels-Geschichte"
