@@ -14,4 +14,4 @@ location:
   url: http://www.gruenhof.org/
 ---
 
-Knuddels war schon immer besonders - gerade deshalb ist die Plattform auch nach 15 Jahren immer noch beliebt. Auch in der Technik wurden öfters eigene Wege beschritten, um mit wenigen Entwicklern einer riesigen Menge an User verarbeiten zu können. Dabei sind - neben dem ein oder anderen Misserfolg - einige kreative Lösungen herausgekommen, die sich über die Jahre bewährt haben. Anekdoten, Hacks und Lösungen fern von modernen Java-Frameworks.
+Knuddels war schon immer besonders - gerade deshalb ist die Plattform auch nach 15 Jahren immer noch beliebt. Auch in der Technik wurden öfters eigene Wege beschritten, um mit wenigen Entwicklern eine riesige Menge an User verarbeiten zu können. Dabei sind - neben dem ein oder anderen Misserfolg - einige kreative Lösungen herausgekommen, die sich über die Jahre bewährt haben. Anekdoten, Hacks und Lösungen fern von modernen Java-Frameworks.
