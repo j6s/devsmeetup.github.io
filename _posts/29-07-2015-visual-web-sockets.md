@@ -8,10 +8,10 @@ speaker:
   name: Chris Ruppel
   url: https://twitter.com/rupl
   image: img/rupl.jpg
-  description: ""
+  description: "Chris has been concatenating text on the web since 1997. Currently he's a frontend developer at Four Kitchens in Austin, TX. "
 location:
   name: Grünhof
   url: http://www.gruenhof.org/
 ---
 
-TODO
+Chris wird eine kleine Einführung zum socket.io halten, mit zwei visuellen beispielen. Das erste ist "bust a shape" ein Kooperationsprojekt mit dem man Kunst in real-time  machen kann. Das zweite ist eine neue Form für Analyticsvisualisierung: viewports in real-time.
