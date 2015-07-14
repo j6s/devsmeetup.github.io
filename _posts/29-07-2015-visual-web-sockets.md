@@ -3,7 +3,7 @@ layout: post
 title: Visual Web Sockets
 date: 29-07-2015 20:00:00
 lanyard:
-short: ""
+short: "Einführung in socket.io"
 speaker:
   name: Chris Ruppel
   url: https://twitter.com/rupl
@@ -14,4 +14,4 @@ location:
   url: http://www.gruenhof.org/
 ---
 
-Chris wird eine kleine Einführung zum socket.io halten, mit zwei visuellen beispielen. Das erste ist "bust a shape" ein Kooperationsprojekt mit dem man Kunst in real-time  machen kann. Das zweite ist eine neue Form für Analyticsvisualisierung: viewports in real-time.
+Chris wird, anhand zwei visuellen Beispielen, eine kleine Einführung in `socket.io` geben. Er wird Kunst in Echtzeit mit "bust a shape" generieren und eine neue Form der Analyticsvisualisierung "viewports in real-time" zeigen.
