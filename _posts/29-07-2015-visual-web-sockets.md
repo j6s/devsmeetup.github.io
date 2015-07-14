@@ -14,4 +14,4 @@ location:
   url: http://www.gruenhof.org/
 ---
 
-Chris wird eine kleine Einführung zum socket.io halten, mit zwei visuelle beispielen. Das erste ist "bust a shape" ein Kooperationsprojekt mit dem man Kunst in real-time  machen kann. Das zweite ist eine neue Form für Analyticsvisualisierung: viewports in real-time.
+Chris wird eine kleine Einführung zum socket.io halten, mit zwei visuellen beispielen. Das erste ist "bust a shape" ein Kooperationsprojekt mit dem man Kunst in real-time  machen kann. Das zweite ist eine neue Form für Analyticsvisualisierung: viewports in real-time.
