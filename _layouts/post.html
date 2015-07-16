@@ -45,7 +45,13 @@ layout: default
 
       {{content}}
 
-      <p class="btn"><a href="{{ page.lanyard }}">Mehr Infos &amp; Anmeldung über Lanyrd</a></p>
+      <p class="btn">
+	  	{% if page.meetup %}
+	  		<a href="{{ page.meetup }}">Mehr Infos &amp; Anmeldung über Meetup.com</a></p>
+		{% endif %}
+	  	{% if page.lanyard %}
+	  		<a href="{{ page.lanyard }}">Mehr Infos &amp; Anmeldung über lanyard</a></p>
+		{% endif %}
     </div>
   </section>
 </section>
