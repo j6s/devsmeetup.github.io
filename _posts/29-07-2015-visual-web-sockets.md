@@ -2,7 +2,7 @@
 layout: post
 title: Visual Web Sockets
 date: 29-07-2015 20:00:00
-lanyard:
+meetup: http://www.meetup.com/Devsmeetup-Freiburg/
 short: "Einführung in socket.io"
 speaker:
   name: Chris Ruppel
