@@ -5,12 +5,12 @@ date: 30-03-2016 20:00:00
 meetup: http://www.meetup.com/Devsmeetup-Freiburg/
 short: Diving headfirst into solar data
 speaker:
-  name: Michael Röttger
+  name: "Michael Röttger"
   url: https://twitter.com/devsmeetup
   image: img/meetup.jpg
   description: "-"
 location:
-  name: Grünhof
+  name: "Grünhof"
   url: http://www.gruenhof.org/
 ---
 
