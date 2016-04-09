@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Verteilte Architektur mit Node.js
-date: 227-04-2016 20:00:00
+date: 27-04-2016 20:00:00
 meetup: "http://www.meetup.com/Devsmeetup-Freiburg/"
 short: "Netzwerkanwendungen zu entwickeln ist einfach: Es gibt einen Server, und es gibt Clients. Doch was, wenn es mehrere Server geben soll?"
 speaker:
