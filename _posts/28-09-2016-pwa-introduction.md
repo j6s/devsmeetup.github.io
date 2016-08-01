@@ -7,7 +7,7 @@ short: "What are Progressive Web Apps and how do they improve my application?"
 speaker:
   name: "Julien Thoma / Anton Stepan"
   url: "https://twitter.com/asndev"
-  image: img/antonjulien.jpg
+  image: img/antonjulien.png
 location:
   name: "Grünhof"
   url: http://www.gruenhof.org/
