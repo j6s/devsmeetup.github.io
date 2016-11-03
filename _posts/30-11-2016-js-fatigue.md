@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript Fatigue Fatigue Syndrome: It's not the abstraction that matters, it's how you use it.
+title: "JavaScript Fatigue Fatigue Syndrome: It's not the abstraction that matters, it's how you use it."
 date: 30-11-2016 20:00:00
 meetup: "http://www.meetup.com/Devsmeetup-Freiburg/events/234545402/"
 short: "See long description :-P"
