@@ -23,7 +23,7 @@ Betrachtungsweise dieses Themas differenzeren.
 
 
 ### Location
-[Freiraum](http://freiraumfreiburg.de/) – nähe Bahnhof (siehe
+[Grünhof](http://gruenhof.org/) (siehe
 [Karte](map.geojson))
 
 
@@ -31,8 +31,6 @@ Betrachtungsweise dieses Themas differenzeren.
 
 Vielen Dank an alle die uns Unterstützen.
 
-Freiraum wird uns zur Verfügung gestellt von
-[/gebrüderheitz](http://gebruederheitz.de/)
 
 
 ### Organisation
