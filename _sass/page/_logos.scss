@@ -7,32 +7,36 @@
   width: 100%;
   text-indent: -333px;
   overflow: hidden;
-  background-size: contain;
 }
 
 .gruenhof .logo {
   background: url(/assets/img/gruenhof.png) no-repeat;
+  background-size: contain;
 }
 
 .inxmail .logo {
   background: url(/assets/img/inxmail.jpg) no-repeat;
+  background-size: contain;
 }
 
 .patronas .logo {
   background: url(/assets/img/patronas.png) no-repeat;
+  background-size: contain;
 }
 
 .reservix .logo {
   background: url(/assets/img/reservix.jpg) no-repeat;
+  background-size: contain;
 }
 
 .haufe .logo {
   background: url(/assets/img/haufe.png) no-repeat;
+  background-size: contain;
 }
 
 .devmup .logo {
   background: url(/assets/img/logo.svg) no-repeat;
-  background-size: auto 100%;
+  background-size: contain;
   text-indent: -999px;
   width: 150px;
   height: 140px;
