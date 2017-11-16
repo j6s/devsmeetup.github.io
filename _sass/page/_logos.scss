@@ -4,39 +4,43 @@
 
   display: inline-block;
   height: 70px;
-  width: 100%;
-  text-indent: -333px;
+  text-indent: -33333333px;
   overflow: hidden;
+  background-size: auto 100%;
 }
 
 .gruenhof .logo {
+  width: 66px;
   background: url(/assets/img/gruenhof.png) no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 
 .inxmail .logo {
+  width: 260px;
   background: url(/assets/img/inxmail.jpg) no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 
 .patronas .logo {
+  width: 206px;
   background: url(/assets/img/patronas.png) no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 
 .reservix .logo {
+  width: 210px;
   background: url(/assets/img/reservix.jpg) no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 
 .haufe .logo {
+  width: 210px;
   background: url(/assets/img/haufe.png) no-repeat;
   background-size: contain;
 }
 
 .devmup .logo {
   background: url(/assets/img/logo.svg) no-repeat;
-  background-size: contain;
   text-indent: -999px;
   width: 150px;
   height: 140px;
