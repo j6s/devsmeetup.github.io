@@ -18,6 +18,32 @@ kickstart for a discussion.
 * Web-Developer: Frontend and Backend,
 * Technical project manager
 
+### How to add new posts?
+
+* Add your event to a new file `_posts/YYYY-MM-DD-title-of-your-talk.md` with the following structure:
+
+``` frontmatter
+---
+layout: post
+title: TITLE OF YOUR TALK
+date: DD-MM-YYYY 20:00:00
+meetup: "https://www.meetup.com/de-DE/Devsmeetup-Freiburg/"
+short: "ABSTRACT OF YOUR TALK, PROBABLY ONE SENTENCE"
+speaker:
+  name: "FIRSTNAME LASTNAME"
+  url: "https://YOUR-WEBSITE/"
+  image: img/YOUR_AVATAR.jpg
+  description: "SHORT BIO"
+location:
+  name: "Grünhof"
+  url: http://www.gruenhof.org/
+---
+
+DESCRIPTION OF YOUR TALK, INTENDED AUDIENCE, DURATION, STRUCTURE
+
+```
+
+* Send a pull request using GitHub
 
 ### Location
 
