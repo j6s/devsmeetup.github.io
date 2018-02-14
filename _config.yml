@@ -21,3 +21,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - bower_components
+  - bower.json
