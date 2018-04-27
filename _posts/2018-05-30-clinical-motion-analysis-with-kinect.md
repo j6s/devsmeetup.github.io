@@ -7,7 +7,7 @@ short: "Introduction and demonstration of motion analysis software and research 
 speaker:
   name: "Bastian Kayser"
   url: "http://motognosis.com/"
-  image: "img/meetup.jpg"
+  image: "img/bastian_kayser.jpg"
   description: "Developer Machine Learning at Motognosis"
 location:
   name: "Grünhof"
