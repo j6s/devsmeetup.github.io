@@ -1,0 +1,51 @@
+$gutter: 30px;
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+
+  @include box(30px, 0);
+
+  @include mq(sm) {
+    @include box(80px, 0);
+  }
+}
+
+.about-box {
+  flex: 0 0 100%;
+  margin-bottom: 40px;
+
+  @include mq(sm) {
+    flex: 1;
+  }
+}
+
+.about-content {
+  font-size: scale(1);
+
+  h3 {
+    font-size: scale(3);
+  }
+}
+
+.about--intro {
+  flex: 0 0 100%;
+
+  h3 + p {
+    font-size: scale(2);
+    line-height: 1.45;
+  }
+}
+
+.about--when {
+  @include mq(sm) {
+    padding-right: $gutter;
+  }
+}
+
+.about--where {
+  @include mq(sm) {
+    padding-left: $gutter;
+  }
+}

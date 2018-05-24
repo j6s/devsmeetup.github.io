@@ -1,0 +1,34 @@
+$twitter: #55acee;
+
+.social {
+  display: flex;
+  justify-content: center;
+  
+  @include box(40px,60px);
+}
+
+.social-twitter {
+  display: flex;
+  align-items: center; 
+
+  padding: 10px 24px;
+
+  color: $white;
+  font-size: scale(2);
+  line-height: 1;
+  font-family: $fontFamilyHeader;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  background: $twitter;
+  border-radius: 3px;
+  
+  &:hover {
+    background: lighten($twitter, 5%);
+  }
+
+  > svg {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,36 @@
+html {
+  mask-origin: antialiased;
+  -webkit-mask-origin: antialiased;
+  -ms-content-zooming: grayscale;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+
+  color: lighten($textColor, 30%);
+  font-size: $bodyFontSize;
+  font-family: $fontFamilyBody;
+  font-weight: 300;
+  line-height: 1.618;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+path {
+  fill: currentColor;
+}

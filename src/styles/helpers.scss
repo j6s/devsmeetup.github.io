@@ -1,0 +1,58 @@
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+// Source: https://css-tricks.com/snippets/sass/power-function/
+@function pow($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $number;
+    }
+  }
+
+  @return $value;
+}
+
+@function scale($level) {
+  @return #{pow(strip-unit($bodyFontSize) * $ratio, $level)}rem;
+}
+
+// Media Query
+// Stolen from: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
+
+@mixin mq($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+@mixin box($top: 20px, $bottom: 20px, $size: md) {
+  max-width: map-get($breakpoints, $size);
+  padding: $top 20px $bottom;
+  margin: 0 auto;
+
+  @include mq(sm) {
+    padding: $top 40px $bottom;
+  }
+}

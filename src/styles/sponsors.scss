@@ -1,0 +1,55 @@
+.sponsors {
+  @include box(30px, 30px);
+
+  @include mq(sm) {
+    @include box(40px, 40px);
+  }
+  h4 {
+    margin-top: 35px;
+  }
+}
+
+.sponsors-caption {
+  font-size: scale(1);
+}
+
+.sponsors-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+
+  > a {
+    padding: 20px;
+  }
+
+  img {
+    height: auto;
+  }
+
+  [alt='Grünhof'] {
+    max-width: 80px;
+  }
+
+  [alt='Patronas'] {
+    max-width: 220px;
+  }
+
+  [alt='Inxmail'] {
+    max-width: 240px;
+  }
+
+  [alt='Reservix'] {
+    max-width: 240px;
+  }
+
+  [alt='Haufe Group'] {
+    max-width: 190px;
+  }
+
+  [alt='Nimius'] {
+    max-width: 70px;
+  }
+}
