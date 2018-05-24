@@ -41,20 +41,23 @@ const serve = ({ folder, port }) =>
   });
 
 const ssr = async url => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
   try {
+    const browser = await puppeteer.launch({
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
+    const page = await browser.newPage();
+
     await page.goto(url, { waitUntil: 'networkidle0' });
     await page.waitForSelector('.teaser');
+
+    const html = await page.content(); // serialized HTML of page DOM.
+    await browser.close();
+
+    return html;
   } catch (err) {
     console.error(err);
     throw new Error('page.goto/waitForSelector timed out.');
   }
-
-  const html = await page.content(); // serialized HTML of page DOM.
-  await browser.close();
-
-  return html;
 };
 
 const sanitize = html => html.replace(/<script.*<\/script>/g, '');
@@ -75,7 +78,7 @@ const copyAll = ({ from, to, files }) =>
 
 // Script
 // ---------------
-const build = async () => {
+void (async function() {
   // Remove old build folder
   await del([out]);
 
@@ -109,10 +112,4 @@ const build = async () => {
   await copyAll({ from: rootDir, to: out, files: staticFiles });
 
   close();
-};
-
-try {
-  build();
-} catch (err) {
-  console.log(err);
-}
+})();
