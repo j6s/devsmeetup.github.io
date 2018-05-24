@@ -75,7 +75,7 @@ const copyAll = ({ from, to, files }) =>
 
 // Script
 // ---------------
-void (async function() {
+const build = async () => {
   // Remove old build folder
   await del([out]);
 
@@ -109,4 +109,10 @@ void (async function() {
   await copyAll({ from: rootDir, to: out, files: staticFiles });
 
   close();
-})();
+};
+
+try {
+  build();
+} catch (err) {
+  console.log(err);
+}
