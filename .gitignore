@@ -1,8 +1,0 @@
-# Tooling
-yarn-error.log
-node_modules
-.cache
-dist
-
-# Use yarn ...
-package-lock.json
