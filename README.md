@@ -1,25 +1,14 @@
-# Developer MeetUp
+# Devsmeetup Freiburg
 
-Software Engineering and Developer MeetUp in Freiburg/Germany
+[![Build Status](https://travis-ci.org/devsmeetup/devsmeetup.github.io.svg?branch=development)](https://travis-ci.org/devsmeetup/devsmeetup.github.io)
 
-### Abstract
+Welcome to the Devsmeetup Freiburg, a monthly hangout for technology and development enthusiasts.
 
-We organize a monthly meetup where everyone can talk and exchange 
-experience about all topics around software development - covering in-depth
-discussions about technical topics or general development stuff.
-
-We aim to have talks up to 30 minutes which serve as an introduction or
-kickstart for a discussion.
-
-### Target group
-
-* Software Developer and Engineers
-* Web-Developer: Frontend and Backend,
-* Technical project manager
+We cover a range of topics related to (software/hardware) development, project management and design. Exchange with like-minded people or just listen to the talk. We're looking forward to hearing from you and to see you at an upcomingevent.
 
 ### Location
 
-[Grünhof](http://gruenhof.org/) ([Map](map.geojson))
+[Grünhof](http://gruenhof.org/) ([Map](https://goo.gl/maps/bwvEm4nmor42))
 
 
 ### Sponsors
@@ -39,6 +28,6 @@ Thanks to our sponsors (drinks and location):
 
 ### Organization
 
-| [![twitter/t3ndh](https://twitter.com/api/users/profile_image/t3ndh?size=bigger)](https://twitter.com/t3ndh "Folge @t3ndh auf Twitter") | [![twitter/sebastiansebald](https://twitter.com/api/users/profile_image/sebastiansebald?size=bigger)](https://twitter.com/sebastiansebald "Folge @sebastiansebald auf Twitter") | [![twitter/stmllr](https://twitter.com/api/users/profile_image/stmllr?size=bigger)](https://twitter.com/stmllr "Folge @stmllr auf Twitter") |
-|-----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Nico de Haen](http://www.ndh-websolutions.de/)                                                                                         | Sebastian Sebald                                                                                                                                                                | [Steffen Müller](http://stmllr.net/)                                                                                                        |
+| [![twitter/t3ndh](https://pbs.twimg.com/profile_images/453293347830890496/874xyLml_400x400.jpeg)](https://twitter.com/t3ndh "Folge @t3ndh auf Twitter") | [![twitter/sebastiansebald](https://pbs.twimg.com/profile_images/767610123246329856/OEvlgPCO_400x400.jpg)](https://twitter.com/sebastiansebald "Folge @sebastiansebald auf Twitter") | [![https://pbs.twimg.com/profile_images/378800000731009111/2b5856aaa91e9356b0d27155ed30e9ca_400x400.png)](https://twitter.com/stmllr "Folge @stmllr auf Twitter") |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Nico de Haen](http://www.ndh-websolutions.de/)                                                                                                         | Sebastian Sebald                                                                                                                                                                     | [Steffen Müller](http://stmllr.net/)                                                                                                                              |
