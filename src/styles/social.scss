@@ -3,13 +3,13 @@ $twitter: #55acee;
 .social {
   display: flex;
   justify-content: center;
-  
-  @include box(40px,60px);
+
+  @include box(0, 80px);
 }
 
 .social-twitter {
   display: flex;
-  align-items: center; 
+  align-items: center;
 
   padding: 10px 24px;
 
@@ -23,7 +23,7 @@ $twitter: #55acee;
 
   background: $twitter;
   border-radius: 3px;
-  
+
   &:hover {
     background: lighten($twitter, 5%);
   }
