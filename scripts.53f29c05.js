@@ -8,4 +8,4 @@ var e=(0,eval)("this");!function(e,t){if("function"==typeof define&&define.amd)d
 },{"fetch-jsonp":63}],49:[function(require,module,exports) {
 "use strict";var e=require("./dom"),t=require("./request"),s=document.getElementById("teaser");(0,t.request)("https://api.meetup.com/Devsmeetup-Freiburg/events?&photo-host=public&page=1&status=upcoming",function(r){var a="";switch(r.status){case t.RequestStatus.Fetching:a="Loading ...";break;case t.RequestStatus.Success:a=(0,e.createTeaser)(r.data[0]);break;case t.RequestStatus.Error:a=r.error.message}s.innerHTML=a});
 },{"./dom":61,"./request":62}]},{},[49])
-//# sourceMappingURL=/scripts.53f29c05.map
+//# sourceMappingURL=scripts.53f29c05.map
