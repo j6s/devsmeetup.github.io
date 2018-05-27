@@ -84,6 +84,7 @@ void (async function() {
 
   // Bundle with parcel
   const bundler = new Bundler(file, {
+    publicUrl: './',
     cache: false,
     detailedReport: true,
     minify: true,
