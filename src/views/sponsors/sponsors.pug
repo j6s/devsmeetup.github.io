@@ -1,0 +1,7 @@
+section.sponsors
+  h2 Sponsors
+  p.sponsors-caption Thanks to all our supporters! You're awesome! ❤️
+  .sponsors-list
+    each s in sponsors
+      +link(s.url)
+        img(src=s.image alt=s.name)

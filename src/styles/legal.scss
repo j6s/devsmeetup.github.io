@@ -1,3 +1,7 @@
 .legal {
   @include box(60px, 30px, sm);
+
+  h2 {
+    margin-bottom: 40px;
+  }
 }

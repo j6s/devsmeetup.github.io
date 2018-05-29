@@ -1,0 +1,8 @@
+section.team
+  .team-content
+    h2.team-caption Team
+    .team-list
+      each t in team
+        +link(t.url)
+          img(src=t.image alt=t.name)
+          | #{t.name}

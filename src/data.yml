@@ -1,0 +1,29 @@
+sponsors:
+  - name: Grünhof
+    url: 'https://www.gruenhof.org/'
+    image: images/gruenhof.png
+  - name: Patronas
+    url: 'https://www.patronas.com/'
+    image: images/patronas.png
+  - name: Inxmail
+    url: 'https://www.inxmail.de/'
+    image: images/inxmail.jpg
+  - name: Reservix
+    url: 'https://karriere.reservix.net/'
+    image: images/reservix.jpg
+  - name: Haufe Group
+    url: 'http://work.haufegroup.io/'
+    image: images/haufe.png
+  - name: Nimius
+    url: 'https://nimius.net/'
+    image: images/nimius.svg
+team:
+  - name: Nico
+    url: http://www.ndh-websolutions.de/
+    image: images/nico.jpg
+  - name: Sebastian
+    url: https://twitter.com/sebastiansebald
+    image: images/sebastian.jpg
+  - name: Steffen
+    url: https://twitter.com/stmllr
+    image: images/steffen.jpg

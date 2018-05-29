@@ -2,27 +2,37 @@
   "name": "devsmeetup.github.io",
   "version": "2.0.0",
   "description": "Website for Devsmeetup",
-  "main": "src/index.html",
+  "main": "src/index.pug",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "repository": "git@github.com:sebald/devsmeetup.github.io.git",
   "author": "Devsmeetup Orga",
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "del": "^3.0.0",
-    "express": "^4.16.3",
+    "del-cli": "^1.1.0",
     "fs-extra": "^6.0.1",
     "globby": "^8.0.1",
+    "got": "^8.3.1",
     "node-sass": "^4.9.0",
     "npm-run-all": "^4.1.3",
-    "parcel-bundler": "^1.7.1",
-    "puppeteer": "^1.4.0",
+    "parcel-bundler":
+      "github:parcel-bundler/parcel#9861c46b2cff1c32c5d20f33ff59441b2630ec0e",
+    "pug": "^2.0.3",
+    "read-config": "^2.0.0",
     "typescript": "^2.8.3"
   },
-  "dependencies": {
-    "fetch-jsonp": "^1.1.3"
-  },
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "node build"
+    "start":
+      "MEETUP=$(node scripts/getUpcomingMeetup) parcel src/index.pug --open --no-cache",
+    "build":
+      "npm-run-all script:clean script:build script:copy script:manifest",
+    "script:build":
+      "MEETUP=$(node scripts/getUpcomingMeetup) parcel build src/index.pug -d release --public-url ./",
+    "script:clean": "del release dist .cache",
+    "script:copy": "node scripts/copyFiles",
+    "script:manifest": "node scripts/fixManifest",
+    "postinstall": "cd node_modules/parcel-bundler/ && yarn && yarn build"
   }
 }

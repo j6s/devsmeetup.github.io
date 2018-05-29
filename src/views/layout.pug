@@ -1,0 +1,36 @@
+include mixins.pug
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='theme-color' content='#34bad4')
+    meta(name='Description' content='Devsmeetup Freiburg, a monthly hangout for technology and development enthusiasts.')
+    link(rel='manifest' href='manifest.json')
+    link(rel='shortcut icon' href='images/fav.ico')
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,700|Open+Sans:300' rel='stylesheet')
+    link(rel='stylesheet' href='styles/index.scss')
+    title Devsmeetup Freiburg
+  body
+    block header
+      header.header(role='banner')
+        img.header-image(src='images/logo-text.svg' alt='Devsmeetup Freiburg')
+    block content
+    block footer
+      footer.footer
+        +link('imprint.pug')
+          | Impressum
+        | |
+        +link('privacy.pug')
+          | Datenschutz
+        | |
+        +link('https://www.meetup.com/Devsmeetup-Freiburg/')
+          | Meetup
+        | |
+        +link('https://twitter.com/devsmeetup')
+          | Twitter
+        | |
+        +link('#')
+          | ▲
+    block scripts

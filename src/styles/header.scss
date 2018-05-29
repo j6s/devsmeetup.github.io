@@ -3,14 +3,6 @@
   justify-content: flex-end;
 
   @include box(30px, 20px);
-
-  &.header--legal {
-    justify-content: center;
-
-    > * {
-      margin: 0 !important;
-    }
-  }
 }
 
 .header-image {

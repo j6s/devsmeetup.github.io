@@ -1,0 +1,14 @@
+section.teaser-container
+  .teaser
+    .teaser-caption Upcoming Meetup
+    h2.teaser-title #{meetup.name}
+    small.teaser-meta
+      include calendar.svg
+      span #{meetup.day} #{meetup.month}
+      include clock.svg
+      span #{meetup.local_time}
+    .teaser-description !{meetup.description}
+    .teaser-footer
+      +link(meetup.link)(class="teaser-link")
+        include rsvp.svg
+        | RSVP

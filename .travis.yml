@@ -1,11 +1,10 @@
 git:
   depth: 1
-sudo: required
 os:
   - linux
 language: node_js
 node_js:
-  - '8'
+  - '10'
 cache:
   yarn: true
   directories:
@@ -17,7 +16,7 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
-  local-dir: dist
+  local-dir: release
   target-branch: master
   on:
     branch: development
