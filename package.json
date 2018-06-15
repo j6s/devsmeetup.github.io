@@ -17,22 +17,17 @@
     "got": "^8.3.1",
     "node-sass": "^4.9.0",
     "npm-run-all": "^4.1.3",
-    "parcel-bundler":
-      "github:parcel-bundler/parcel#9861c46b2cff1c32c5d20f33ff59441b2630ec0e",
+    "parcel-bundler": "1.9.0",
     "pug": "^2.0.3",
     "read-config": "^2.0.0",
     "typescript": "^2.8.3"
   },
   "scripts": {
-    "start":
-      "MEETUP=$(node scripts/getUpcomingMeetup) parcel src/index.pug --open --no-cache",
-    "build":
-      "npm-run-all script:clean script:build script:copy script:manifest",
-    "script:build":
-      "MEETUP=$(node scripts/getUpcomingMeetup) parcel build src/index.pug -d release --public-url ./",
+    "start": "MEETUP=$(node scripts/getUpcomingMeetup) parcel src/index.pug --open --no-cache",
+    "build": "npm-run-all script:clean script:build script:copy script:manifest",
+    "script:build": "MEETUP=$(node scripts/getUpcomingMeetup) parcel build src/index.pug -d release --public-url ./",
     "script:clean": "del release dist .cache",
     "script:copy": "node scripts/copyFiles",
-    "script:manifest": "node scripts/fixManifest",
-    "postinstall": "cd node_modules/parcel-bundler/ && yarn && yarn build"
+    "script:manifest": "node scripts/fixManifest"
   }
 }
