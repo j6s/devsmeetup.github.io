@@ -96,6 +96,12 @@
 
 .teaser-description {
   padding-top: 4px;
+
+  a,
+  a:visited {
+    color: $white;
+    border-bottom: 1px solid rgba($white, 0.25);
+  }
 }
 
 .teaser-footer {

@@ -34,3 +34,14 @@ img {
 path {
   fill: currentColor;
 }
+
+*:focus {
+  outline: 2px solid $brandComplement;
+}
+
+::-moz-selection {
+  background: rgba($brandComplement, 0.8);
+}
+::selection {
+  background: rgba($brandComplement, 0.8);
+}
